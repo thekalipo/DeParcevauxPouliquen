@@ -5,7 +5,7 @@ Reunion every week
 
 
 ### Timeline
-10/11/2021: 
+10/11/2021: World & Machine Phenomena (45 min)
 
 World Phenomena:  
 -Farmers produce certain amount of food  
