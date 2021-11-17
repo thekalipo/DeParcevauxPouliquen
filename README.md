@@ -12,7 +12,7 @@ Project by Pouliquen Glen & de Parcevaux Baudouin
 
 #### 17/11/2021:   
 -what we did: Goals, Requirements and Domain Properties (1h)  
--to do before next session: questions to stakeholders (see PDF + Github) + understand the performance metrics, the data format,...  (see https://github.com/UNDP-India/Data4Policy)
+-to do before next session: questions to stakeholders (see PDF + Github) + understand the performance metrics, the data format,...  (see https://github.com/UNDP-India/Data4Policy)  
 -to do next session: finish R,G,D   
 
 #### 10/11/2021:  
