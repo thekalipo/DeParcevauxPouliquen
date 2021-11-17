@@ -6,14 +6,14 @@ Project by Pouliquen Glen & de Parcevaux Baudouin
 ## Timeline
 
 #### 24/11/2021:
--what we did:
--to do before next session:
--to do next session:
+-what we did:  
+-to do before next session:  
+-to do next session:   
 
 #### 17/11/2021:   
--what we did: Goals, Requirements and Domain Properties (1h)
--to do before next session: questions to stakeholders (see PDF + Github) + understand the performance metrics, the data format,...
--to do next session: finish R,G,D
+-what we did: Goals, Requirements and Domain Properties (1h)  
+-to do before next session: questions to stakeholders (see PDF + Github) + understand the performance metrics, the data format,...  
+-to do next session: finish R,G,D   
 
 #### 10/11/2021:  
 -what we did : World & Machine Phenomena (45 min)  
