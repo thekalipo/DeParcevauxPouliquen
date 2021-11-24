@@ -3,6 +3,10 @@ Polimi SOFTWARE ENGINEERING 2 RDD project
 
 Project by Pouliquen Glen & de Parcevaux Baudouin
 
+## Useful Links
+UNDP Github: https://github.com/UNDP-India/Data4Policy
+Soil data: https://bhuvan-app3.nrsc.gov.in/data/download/index.php?c=p&s=NI&g=OS
+
 ## Timeline
 
 #### 24/11/2021:
@@ -12,7 +16,7 @@ Project by Pouliquen Glen & de Parcevaux Baudouin
 
 #### 17/11/2021:   
 -what we did: Goals, Requirements and Domain Properties (1h)  
--to do before next session: questions to stakeholders (see PDF + Github) + understand the performance metrics, the data format,...  (see https://github.com/UNDP-India/Data4Policy)  
+-to do before next session: questions to stakeholders (see PDF + Github) + understand the performance metrics, the data format,... 
 -to do next session: finish R,G,D   
 
 #### 10/11/2021:  
