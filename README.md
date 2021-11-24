@@ -4,8 +4,9 @@ Polimi SOFTWARE ENGINEERING 2 RDD project
 Project by Pouliquen Glen & de Parcevaux Baudouin
 
 ## Useful Links
-UNDP Github: https://github.com/UNDP-India/Data4Policy
-Soil data: https://bhuvan-app3.nrsc.gov.in/data/download/index.php?c=p&s=NI&g=OS
+UNDP Github: https://github.com/UNDP-India/Data4Policy  
+Soil data: https://bhuvan-app3.nrsc.gov.in/data/download/index.php?c=p&s=NI&g=OS  
+Rainfall data: https://www.tsdps.telangana.gov.in/aws.jsp
 
 ## Timeline
 
