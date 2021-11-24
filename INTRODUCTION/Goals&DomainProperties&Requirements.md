@@ -9,7 +9,7 @@
 - G5 : Allow farmers to discuss on forums (*Check if it is part of G6 or if the means are separated*)
   - G5.1 : Allow farmers to participate to a forum
   - G5.1 : Allow farmers to create a forum 
-- G6 : Allow farmers to help or be helped (?)
+- G6 : Allow farmers to help or be helped (?) -> agronomists 
 - 
 
 
