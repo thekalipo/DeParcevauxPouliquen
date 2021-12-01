@@ -10,9 +10,14 @@ Rainfall data: https://www.tsdps.telangana.gov.in/aws.jsp
 
 ## Timeline
 
+### 1/12/2021:
+-what we did: 
+-to do before next session: 
+-to do next session:
+
 #### 24/11/2021:
--what we did: R,G,D + Scenarios (1h)
--to do before next session: Scenarios (split the job)
+-what we did: R,G,D + Scenarios (1h)   
+-to do before next session: Scenarios (split the job)   
 -to do next session: Review Scnarios + Deduce use cases
 
 #### 17/11/2021:   
