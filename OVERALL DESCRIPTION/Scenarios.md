@@ -30,12 +30,12 @@ Josh has seen his culture giving poor results on the last year due to climate ch
 
 
 (
--forum pour les discussions entre fermiers (les PM y ont aussi accès)
--suggestions sont donnés par les policy makers avec les meilleures pratiques des bons fermiers. Tous les ans
--soutiens financiers par les PM
--aides sont donnés par les agronomes X
+- forum pour les discussions entre fermiers (les PM y ont aussi accès)   
+- suggestions sont donnés par les policy makers avec les meilleures pratiques des bons fermiers. Tous les ans    
+- soutiens financiers par les PM  
+- aides sont donnés par les agronomes X   
 )
 
 (
--performance : crop productivity / crop diversification / soil health / soil moisture / soil organic carbon / tree cover (EVI, Enhanced Vegetation Index or SAVI, Soil Adjusted Vegetation Index ?)/ 
+- performance : crop productivity / crop diversification / soil health / soil moisture / soil organic carbon / tree cover (EVI, Enhanced Vegetation Index or SAVI, Soil Adjusted Vegetation Index ?)/   
 )
