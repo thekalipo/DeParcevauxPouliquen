@@ -11,9 +11,9 @@ Rainfall data: https://www.tsdps.telangana.gov.in/aws.jsp
 ## Timeline
 
 ### 1/12/2021:
--what we did: 
--to do before next session: 
--to do next session:
+-what we did: Scenarios + review of RGD (1h30)
+-to do before next session: use case + diagram (Glen) / scenario + review RGD (Baudouin) -> Check on 3/12/2021. Questions ?   
+-to do next session: Select time for next session (Th/Fr).   
 
 #### 24/11/2021:
 -what we did: R,G,D + Scenarios (1h)   
