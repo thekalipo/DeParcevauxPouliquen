@@ -37,5 +37,5 @@ Josh has seen his culture giving poor results on the last year due to climate ch
 )
 
 (
--performance : voir si autre chose que productivité
+-performance : crop productivity / crop diversification / soil health / soil moisture / soil organic carbon / tree cover (EVI, Enhanced Vegetation Index or SAVI, Soil Adjusted Vegetation Index ?)/ 
 )
