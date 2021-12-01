@@ -3,18 +3,31 @@
   
 - G2 : Allow the farmers to retrieve personalized suggestions (*On what are based suggestions ? Weather, location, soil humidity, crop, best practices given by others*)    
 - G3 : Allow the farmers to access data about weather and soil conditions and predictions (*In what area ? 10/150 km What kind of data exactly ?*)
-- G4 : Allow policy makers to access the performance indicators of their dedicated farmers (*What are the perf indicators ?*)
-  - G4.1 : Allow the farmers to release their production data (*ensure that the policy makers are the only ones interested by these data*)
-  - G4.2 : Allow the captors to send their humidity data 
 - G5 : Allow farmers to discuss on forums (*Check if it is part of G6 or if the means are separated*)
   - G5.1 : Allow farmers to participate to a forum
   - G5.1 : Allow farmers to create a forum 
-- G6 : Allow farmers to help or be helped (?) -> agronomists 
-- 
+
+
+- G1 : Allow farmers to get advices for optimizing their production  
+* Allow farmers to retrieve personalized suggestions if they perform poorly  
+* Allow farmers to discuss with other farmers about their issues
+* Allow farmers to send a specific help request
+
+- G2 : Allow farmers to get data that impact their production 
+* Allow farmers to access data about weather conditions and predictions  
+* Allow farmers to access data about soil moisture
+* Allow farmers to access data about soil organic carbon
+
+
+- G3 : Allow policy makers to globally enhance the productivity of the farmers of their area   
+* Allow policy makers to identify well and poorly performing farmers of their area, according to a chosen metric
+* Allow policy makers to incent well performing farmers
+* Allow policy makers to fetch best practices among farmers and provide them to others
+* Allow policy makers to urge poorly performing farmers to send a help request
 
 
 ## Domain Properties / Assumptions
-- DP1 : Every farmer has a smartphone (with ... properties)
+- DP1 : Every farmer has a smartphone (with geo-tracking,...  properties)
 - DP2 : Data are up-to-date (in a ... days range)
 - DP3 : Farmers are fair when providing data, suggestions & problems
 - DP4 : There are at least 2 farmers and 1 policy maker
