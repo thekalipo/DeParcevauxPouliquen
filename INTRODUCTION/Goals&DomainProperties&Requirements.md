@@ -27,7 +27,7 @@
 ## Requirements
 - R1: When a farmer asks for personalized suggestions, the system should retrieve the weather, soil and location data
 - R2: If a farmer performs well, the system request his best practices
-- R3: Every ... (same timelapse for every farmer or depending on area, policy maker, farmer,... ?), the system requests production data of the farmer. (could the farmer give data from last month/year/... ?)
+- R3: Every year, the system requests production data of the farmer. Bu(could the farmer give data from last month/year/... ?)
 - R4: The system fetches (in real time or every ...?) the data about soil and irrigation
 - R5: The system should compute the performance indicators based on the data provided by farmers
 - R6: When a policy maker asks for poor-performing farmers, the system should retrieve the associated farmers (based on area and the specified metric) (Is the help given by policy makers a financial support ?)
