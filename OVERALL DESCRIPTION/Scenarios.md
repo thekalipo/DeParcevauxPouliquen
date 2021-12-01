@@ -2,8 +2,8 @@
 
 (The farmer receives an e-mail to suggest registration ?)
 
-Anan receives an e-mail from administration that re-directs him to the DREAM website registration page. He registers by providing his mail, name, surname, farmID (?), area.
-He now sees the weather forecasts, soil and humidity conditions of his area on his home page. He uses these information for his current cultures. 
+Ishaan receives an e-mail from administration that re-directs him to the DREAM website registration page. He registers by providing his email address, name, surname, farmID (?), area. The system
+
 
 ### Scenario 2 : A farmer provides his production data and its type (crop, fertilizer)
 Josh has finished harvest. He measures his production. He releases the following data on the DREAM platform where he is logged in : amount of production, location, date (of start and end ?). 
@@ -17,7 +17,7 @@ Josh has seen his culture giving poor results on the last year due to climate ch
 
 ### Scenario 6 : A farmer looks for advice on fertilizer on a forum (filter by tag, area,... ? research). He finds someone that put a good answer -> he joins him privately. He replies to another question.
 
-### Scenario 7 : A farmer receives a notification of best practice because his productivity was low on the year
+### Scenario 7 : A farmer receives a notification of help request because his productivity was low on the year
 
 ### Scenario 8 : A PM identifies well performing farmers based on some metrics and send them a message + incentive + request for best practices (-> to be sent to agronomists)
 
@@ -26,6 +26,18 @@ Josh has seen his culture giving poor results on the last year due to climate ch
 ### Scenario 10 : A PM goes on the forum to look for the issues farmers face. He notes that the lake of water was a big thing. (He will ask for best practices on this)
 
 ### Scenario 11 : A farmer makes an help request (precise + hidden to others) that will be forwarded to agronomist(s)
+
+### Scenario 12 : Adverse event -> help request
+
+
+Ishaan.
+Dhruv.
+Shyla.
+Amar.
+Diya.
+Ananya.
+Tamia.
+Nila.
 
 
 
