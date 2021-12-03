@@ -2,7 +2,7 @@
 
 (The farmer receives an e-mail to suggest registration ?)
 
-Ishaan receives an e-mail from administration that redirects him to the DREAM website registration page. He registers by providing his email address, name, surname, farmID (?), area. The system checks that the address isn't already registered, then sends a validation e-mail to Ishaan. Based on Ishaan's location, the system displays rainfall conditions and predictions in his mandal (or district if mandal not recorded) and sends a notification to the policy maker in charge of the area. 
+Ishaan receives an e-mail from administration that redirects him to the DREAM website registration page. He registers by providing his email address, name, surname, farmID (?) and finally location which he provides by means of the geo-tracking functionality of his smartphone. The system checks that the email address isn't already registered, then sends a validation email to Ishaan. After validation, the system fetchs Ishaan's district and mandal, based on his location. It then displays rainfall conditions and predictions on the homepage of Ishaan in his mandal and in his district. It then fetchs the policy maker(s ?) corresponding to this area (**mandal,district ?**). The system sends a notification to the policy maker in charge of the area to acknowledge the registration of Ishaan.  (Does a farmer own fields from one mandal only ?)
 
 
 ### Scenario 2 : A farmer provides his production data and its type (crop, fertilizer)
