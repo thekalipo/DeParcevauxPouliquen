@@ -16,9 +16,10 @@ Dhruv's old tractor is broken. He wonders if he should try to repair it, if poss
 ### Scenario 4 : A farmer looks at the prediction 
 
 ### Scenario 5 : A farmer is asked his productivity for the previous year (at the cropping season) and after a while receives an incentive and a request for best pratices
-Between April and October, Amar crops and harvests rice during the so-called "Kharif"season. In November, he receives a notification from DREAM that urges him to release his production data - seed variety, seed rate, production amount, surface area of the cultivated fields, location (?), start and end date - before the end of the month. He instantly performs. On the first of December, a notification telling the completudeness of the database gathering the production data of the farmers in Amar's area (?) is sent by the system to the dedicated policy makers.
+Between April and October, Amar crops and harvests rice during the so-called "Kharif"season. In November, he receives a notification from DREAM that urges him to release his production data - seed variety, seed rate, production amount, surface area of the cultivated fields, location (?), start and end date - by the end of the month. He instantly performs. On the first of December, a notification telling the completudeness of the database gathering the production data of the farmers in Amar's area (?) is sent by the system to the dedicated policy makers.
 
 ### Scenario 6 : A farmer looks for advice on fertilizer on a forum (filter by tag, area,... ? research). He finds someone that put a good answer -> he joins him privately. He replies to another question.
+Diya is not sure about the law regarding some specific fertilizer. She looks for discussion forums on DREAM. She uses as keywords "law", the name of the fertilizer and she filters the results to get late discussions - she knows that the law has changed in the previous years. She finds some farmer whose response handles her issue. Since she wants some more precision, she contacts the farmer, via DREAM, in a private discussion.
 
 ### Scenario 7 : A farmer receives a notification of help request because his productivity was low on the year
 
@@ -37,7 +38,7 @@ Ishaan.X
 Dhruv.X
 Shyla.X
 Amar.X
-Diya.
+Diya.X
 Ananya.
 Tamia.
 Nila.
