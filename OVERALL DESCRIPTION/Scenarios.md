@@ -8,14 +8,15 @@ After validation, the system fetchs Ishaan's district and mandal, based on his l
 
 
 ### Scenario 2 : A farmer provides his production data and its type (crop, fertilizer)
-Dhruv has just finished his crop. He measures his production. He logs in on the DREAM platform where he had already registered. He goes to the page "Release production". He fills the following sections: seed, production amount, surface area of the cultivated fields, location (?), start and end date. 
+Shyla has just finished his crop. He measures his production. She logs in on the DREAM platform where she had already registered. She goes to the page "Release production". He fills the following sections: seed variety, seed rate, production amount, surface area of the cultivated fields, location (?), start and end date. 
   
 ### Scenario 3 : A farmer creates a discussion forum
-Shyla has seen her culture giving poor results on the last year due to climate change. He wants to use some fertilizers but he doesn't know about the local/national regulation. He posts a new topic on DREAM.
+Dhruv's old tractor is broken. He wonders if he should try to repair it, if possible, and if not, what modern model he should choose. He looks for feedbacks on the forum discussion of the DREAM platform. As he can't find any on the kind of engine he owns, he creates a new topic, explains his issue and waits for answers.
 
 ### Scenario 4 : A farmer looks at the prediction 
 
 ### Scenario 5 : A farmer is asked his productivity for the previous year (at the cropping season) and after a while receives an incentive and a request for best pratices
+Between April and October, Amar crops and harvests rice during the so-called "Kharif"season. In November, he receives a notification from DREAM that urges him to release his production data - seed variety, seed rate, production amount, surface area of the cultivated fields, location (?), start and end date - before the end of the month. He instantly performs. On the first of December, a notification telling the completudeness of the database gathering the production data of the farmers in Amar's area (?) is sent by the system to the dedicated policy makers.
 
 ### Scenario 6 : A farmer looks for advice on fertilizer on a forum (filter by tag, area,... ? research). He finds someone that put a good answer -> he joins him privately. He replies to another question.
 
@@ -34,8 +35,8 @@ Shyla has seen her culture giving poor results on the last year due to climate c
 
 Ishaan.X
 Dhruv.X
-Shyla.
-Amar.
+Shyla.X
+Amar.X
 Diya.
 Ananya.
 Tamia.
@@ -51,5 +52,5 @@ Nila.
 )
 
 (
-- performance : crop productivity / crop diversification / soil health / soil moisture / soil organic carbon / tree cover (EVI, Enhanced Vegetation Index or SAVI, Soil Adjusted Vegetation Index ?)/   
+- performance : crop productivity (in quintals qtls, area in Lakh ha)/ seed rate (Qtls/ha)/crop diversification / soil health / soil moisture / soil organic carbon / tree cover (EVI, Enhanced Vegetation Index or SAVI, Soil Adjusted Vegetation Index ?)/   
 )
