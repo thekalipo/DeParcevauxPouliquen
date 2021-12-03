@@ -2,11 +2,11 @@
 
 (The farmer receives an e-mail to suggest registration ?)
 
-Ishaan receives an e-mail from administration that re-directs him to the DREAM website registration page. He registers by providing his email address, name, surname, farmID (?), area. The system
+Ishaan receives an e-mail from administration that redirects him to the DREAM website registration page. He registers by providing his email address, name, surname, farmID (?), area. The system checks that the address isn't already registered, then sends a validation e-mail to Ishaan. Based on Ishaan's location, the system displays rainfall conditions and predictions in his mandal (or district if mandal not recorded) and sends a notification to the policy maker in charge of the area. 
 
 
 ### Scenario 2 : A farmer provides his production data and its type (crop, fertilizer)
-Josh has finished harvest. He measures his production. He releases the following data on the DREAM platform where he is logged in : amount of production, location, date (of start and end ?). 
+Dhruv has just finished his crop. He measures his production. He releases the following data on the DREAM platform where he is logged in : amount of production, location, date (of start and end ?). 
   
 ### Scenario 3 : A farmer creates a discussion forum
 Josh has seen his culture giving poor results on the last year due to climate change. He wants to use some fertilizers but he doesn't know about the local/national regulation. He posts a new topic on DREAM.
