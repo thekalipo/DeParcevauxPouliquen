@@ -34,7 +34,7 @@
 - DP5 : Data from sensors are accurate (in a ... extent)
 - DP6 : Data from the Web are accurate (in a ... extent)
 - DP7 : Sensors are always available, or at least, there is a sufficient number of them to properly describe an area (precision of the DP ?)
-- 
+- DP8 : farmers should have received credencials to log in the application
 
 
 ## Requirements
