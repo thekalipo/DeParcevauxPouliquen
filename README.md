@@ -6,7 +6,7 @@ Project by Pouliquen Glen & de Parcevaux Baudouin
 ## Useful Links
 UNDP Github: https://github.com/UNDP-India/Data4Policy  
 Soil data: https://bhuvan-app3.nrsc.gov.in/data/download/index.php?c=p&s=NI&g=OS (NICES Project – Terrestrial Sciences – Indian Soil Data sets/Vegetation Index/
-Rainfall data: https://www.tsdps.telangana.gov.in/aws.jsp
+Rainfall data: https://www.tsdps.telangana.gov.in/aws.jsp  
 Emergency data: https://ndem.nrsc.gov.in/login.php#
 
 
