@@ -8,10 +8,10 @@ After validation, the system fetchs Ishaan's district and mandal, based on his l
 
 
 ### Scenario 2 : A farmer provides his production data and its type (crop, fertilizer)
-Dhruv has just finished his crop. He measures his production. He logs in on the DREAM platform where he had already registered. He clicks on the button "Release production". He fills the following blanks: seed, amount of production, location (?), start and end date. 
+Dhruv has just finished his crop. He measures his production. He logs in on the DREAM platform where he had already registered. He goes to the page "Release production". He fills the following sections: seed, production amount, surface area of the cultivated fields, location (?), start and end date. 
   
 ### Scenario 3 : A farmer creates a discussion forum
-Josh has seen his culture giving poor results on the last year due to climate change. He wants to use some fertilizers but he doesn't know about the local/national regulation. He posts a new topic on DREAM.
+Shyla has seen her culture giving poor results on the last year due to climate change. He wants to use some fertilizers but he doesn't know about the local/national regulation. He posts a new topic on DREAM.
 
 ### Scenario 4 : A farmer looks at the prediction 
 
@@ -32,8 +32,8 @@ Josh has seen his culture giving poor results on the last year due to climate ch
 ### Scenario 12 : Adverse event -> help request
 
 
-Ishaan.
-Dhruv.
+Ishaan.X
+Dhruv.X
 Shyla.
 Amar.
 Diya.
