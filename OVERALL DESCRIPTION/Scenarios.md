@@ -24,9 +24,10 @@ Diya is not sure about the law regarding some specific fertilizer. She looks for
 ### Scenario 7 : A farmer receives a notification of help request because his productivity was low on the year
 
 ### Scenario 8 : A PM identifies well performing farmers based on some metrics and send them a message + incentive + request for best practices (-> to be sent to agronomists)
-Ananya is a policy maker. On December, 1st, she receives a notification from DREAM telling that all farmers of her area have delivered their production data. She selects some performance metrics among those proposed. The systems ranks the farmers accordingly and displays the ranking. Ananya selects the farmers that may require help. She sends them a message via DREAM
+
 
 ### Scenario 9 : A PM identifies poorly performing farmers based on some metrics and send them a message to propose help (-> to be forwarded to agronomists)
+Ananya is a policy maker. On December, 1st, she receives a notification from DREAM telling that all farmers of her area have delivered their production data. She selects some performance metrics among those proposed. The systems ranks the farmers accordingly and displays the ranking. Ananya selects the farmers that may require help. She sends them a message via DREAM ask for a help. 
 
 ### Scenario 10 : A PM goes on the forum to look for the issues farmers face. He notes that the lake of water was a big thing. (He will ask for best practices on this)
 
@@ -44,7 +45,7 @@ Ananya. X
 Nikhil X
 Tamia.
 Nila.
-
+Sahil
 
 
 (
