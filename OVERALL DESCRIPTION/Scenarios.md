@@ -16,7 +16,7 @@ Dhruv's old tractor is broken. He wonders if he should try to repair it, if poss
 ### Scenario 4 : A farmer looks at the prediction 
 
 ### Scenario 5 : A farmer is asked his productivity for the previous year (at the cropping season) and after a while receives an incentive and a request for best pratices
-Between April and October, Amar crops and harvests rice during the so-called "Kharif"season. In November, he receives a notification from DREAM that urges him to release his production data - seed variety, seed rate, production amount, surface area of the cultivated fields, location (?), start and end date - by the end of the month. He instantly performs. On the first of December, a notification telling the completudeness of the database gathering the production data of the farmers in Amar's area (?) is sent by the system to the dedicated policy makers.
+Between April and October, Amar crops and harvests rice during the so-called "Kharif"season. In November, he receives a notification from DREAM that urges him to release his production data - seed variety, seed rate, production amount, surface area of the cultivated fields, location (?), start and end date - by the end of the month. He instantly performs. On the first of December, a notification telling the completudeness of the database gathering the production data of the farmers in Amar's area (?) is sent by the system to the dedicated policy maker.
 
 ### Scenario 6 : A farmer looks for advice on fertilizer on a forum (filter by tag, area,... ? research). He finds someone that put a good answer -> he joins him privately. He replies to another question.
 Diya is not sure about the law regarding some specific fertilizer. She looks for discussion forums on DREAM. She uses as keywords "law", the name of the fertilizer and she filters the results to get late discussions - she knows that the law has changed in the previous years. She finds some farmer whose response handles her issue. Since she wants some more precision, she contacts the farmer, via DREAM, in a private discussion.
@@ -24,6 +24,7 @@ Diya is not sure about the law regarding some specific fertilizer. She looks for
 ### Scenario 7 : A farmer receives a notification of help request because his productivity was low on the year
 
 ### Scenario 8 : A PM identifies well performing farmers based on some metrics and send them a message + incentive + request for best practices (-> to be sent to agronomists)
+Ananya is a policy maker. On December, 1st, she receives a notification from DREAM telling that all farmers of her area have delivered their production data. She selects some performance metrics among those proposed. The systems ranks the farmers accordingly and displays the ranking. Ananya selects the farmers that may require help. She sends them a message via DREAM
 
 ### Scenario 9 : A PM identifies poorly performing farmers based on some metrics and send them a message to propose help (-> to be forwarded to agronomists)
 
@@ -39,7 +40,8 @@ Dhruv.X
 Shyla.X
 Amar.X
 Diya.X
-Ananya.
+Ananya. X
+Nikhil X
 Tamia.
 Nila.
 
