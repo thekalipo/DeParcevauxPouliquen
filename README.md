@@ -6,10 +6,10 @@ Project by Pouliquen Glen & de Parcevaux Baudouin
 ## Useful Links
 UNDP Github: https://github.com/UNDP-India/Data4Policy  
 Soil data: https://bhuvan-app3.nrsc.gov.in/data/download/index.php?c=p&s=NI&g=OS NICES Project – Terrestrial Sciences – Indian Soil Data sets (texture, depth, carbon) /Vegetation Index /Soil Moisture    
-Rainfall data: https://www.tsdps.telangana.gov.in/aws.jsp  
-Emergency data: https://ndem.nrsc.gov.in/login.php#
-Seed plans: https://seednet.gov.in/SeedPlan/2022-2023.aspx   
-Seed recommendations: https://seednet.gov.in/Material/SeedDetails.aspx?type=eeNBLo%2f7AuxXlGoppBkgwmZeblW1cHuN0OmBoY%2fo7Oc%3d   
+Rainfall data: https://www.tsdps.telangana.gov.in/aws.jsp    
+Emergency data: https://ndem.nrsc.gov.in/login.php#   
+Seed plans: https://seednet.gov.in/SeedPlan/2022-2023.aspx     
+Seed recommendations: https://seednet.gov.in/Material/SeedDetails.aspx?type=eeNBLo%2f7AuxXlGoppBkgwmZeblW1cHuN0OmBoY%2fo7Oc%3d     
 
 ## Timeline
 
