@@ -22,30 +22,19 @@ Between April and October, Amar crops and harvests rice during the so-called "Kh
 Diya is not sure about the law regarding some specific fertilizer. She looks for discussion forums on DREAM. She uses as keywords "law", the name of the fertilizer and she filters the results to get late discussions - she knows that the law has changed in the previous years. She finds some farmer whose response handles her issue. Since she wants some more precision, she contacts the farmer, via DREAM, in a private discussion.
 
 ### Scenario 7 : A farmer receives a notification of help request because his productivity was low on the year
+Sahil receives a notification from his policy maker proposing him to send an help request. He performs this.
 
 ### Scenario 8 : A PM identifies well performing farmers based on some metrics and send them a message + incentive + request for best practices (-> to be sent to agronomists)
-
+Nikhil is a policy maker. On December, 1st, he receives a notification from DREAM telling that all farmers of his area have delivered their production data. He selects some performance metrics among those proposed. The systems ranks the farmers accordingly and displays the ranking. Nikhil selects the farmer that he wants to congratulate. He sends to each one a message via DREAM, and ticks a box to send an e-voucher that the system generates and enclose. In the messages, Nikhil asks for best practices to the farmers.
 
 ### Scenario 9 : A PM identifies poorly performing farmers based on some metrics and send them a message to propose help (-> to be forwarded to agronomists)
-Ananya is a policy maker. On December, 1st, she receives a notification from DREAM telling that all farmers of her area have delivered their production data. She selects some performance metrics among those proposed. The systems ranks the farmers accordingly and displays the ranking. Ananya selects the farmers that may require help. She sends them a message via DREAM ask for a help. 
+Ananya is a policy maker. On December, 1st, she receives a notification from DREAM telling that all farmers of her area have delivered their production data. She selects some performance metrics among those proposed. The systems ranks the farmers accordingly and displays the ranking. Ananya selects the farmers that may require help. She sends them a message via DREAM to propose them to be helped. 
 
 ### Scenario 10 : A PM goes on the forum to look for the issues farmers face. He notes that the lake of water was a big thing. (He will ask for best practices on this)
+Nila is a policy maker. Crop is coming to end. She wwants to correctly understand the issues that face the farmers of her area, in order to ask relevant questions to well performing farmers. She spends some time on forum discussions and note the most repeating concerns of farmers.
 
 ### Scenario 11 : A farmer makes an help request (precise + hidden to others) that will be forwarded to agronomist(s)
-
-### Scenario 12 : Adverse event -> help request
-
-
-Ishaan.X
-Dhruv.X
-Shyla.X
-Amar.X
-Diya.X
-Ananya. X
-Nikhil X
-Tamia.
-Nila.
-Sahil
+Tamia requires the insight of some expert on crops for the coming seeding. She goes to the "help request" section. She sends message. Based on her location, the system forwards the message to the adequate policy maker. He will send the request to an agronomist, who will afterwards contact  Tamia.
 
 
 (
