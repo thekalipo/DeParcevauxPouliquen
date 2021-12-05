@@ -15,7 +15,7 @@ Seed recommendations: https://seednet.gov.in/Material/SeedDetails.aspx?type=eeNB
 
 ### 1/12/2021:
 -what we did: Scenarios + review of RGD (1h30)
--to do before next session: use case + diagram (Glen) / scenario + review RGD (Baudouin) -> Check on 3/12/2021. Questions ?   (4h)
+-to do before next session: use case + diagram (Glen) / scenario + review RGD (Baudouin) -> Check on 3/12/2021. Questions ? (4h)    
 -to do next session: Select time for next session (Th/Fr).   
 
 #### 24/11/2021:
