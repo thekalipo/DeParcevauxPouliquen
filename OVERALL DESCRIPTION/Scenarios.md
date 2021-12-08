@@ -1,4 +1,4 @@
-### Scenario 1 :  A new farmer registers
+### Scenario 1 :  Farmer registration
 
 (The farmer receives an e-mail to suggest registration ?)
 
@@ -7,14 +7,14 @@ Ishaan receives an e-mail from administration that redirects him to the DREAM we
 After validation, the system fetchs Ishaan's district and mandal, based on his location. It then displays rainfall conditions and predictions on the homepage of Ishaan in his mandal and in his district. It then fetchs the policy maker(s ?) corresponding to this area (**mandal,district ?**). The system sends a notification to the policy maker in charge of the area to acknowledge the registration of Ishaan.  (Does a farmer own fields from one mandal only ?)
 
 
-### Scenario 2 : A farmer provides his production data and its type (crop, fertilizer)
-Shyla has just finished his crop. She measures her production. She logs in on the DREAM platform where she had already registered. She goes to the page "Release production". He fills the following sections: seed variety, seed rate, production amount, surface area of the cultivated fields, location (?), start and end date. 
+### Scenario 2 : Production data and type Release
+Shyla has just finished his crop. She measures her production. She logs in on the DREAM platform where she had already registered. She goes to the page "Release production". She fills the following sections: seed variety, seed rate, production amount, surface area of the cultivated fields, location (?), start and end date. 
   
-### Scenario 3 : A farmer creates a discussion forum
+### Scenario 3 : Discussion forum creation
 Dhruv's old tractor is broken. He wonders if he should try to repair it, if possible, and if not, what modern model he should choose. He looks for feedbacks on the forum discussion of the DREAM platform. As he can't find any on the kind of engine he owns, he creates a new topic, explains his issue and waits for answers.
 
-### Scenario 4 : A farmer looks at the prediction 
-Ashwin wants to know what are is soil conditions to choose the correct fertilizer. He logs in on the DREAM platform
+### Scenario 4 : Prediction check 
+Ashwin wants to know what are the soil and weather conditions of his mandal to correctly dose his fertilizer. He logs in on the DREAM platform. He goes to the page "Soil and weather". He checks the soil moisture data. Since the
 
 ### Scenario 5 : A farmer is asked his productivity for the previous year (at the cropping season) and after a while receives an incentive and a request for best pratices
 Between April and October, Amar crops and harvests rice during the so-called "Kharif"season. In November, he receives a notification from DREAM that urges him to release his production data - seed variety, seed rate, production amount, surface area of the cultivated fields, location (?), start and end date - by the end of the month. He instantly performs. On the first of December, a notification telling the completudeness of the database gathering the production data of the farmers in Amar's area (?) is sent by the system to the dedicated policy maker.
