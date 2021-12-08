@@ -4,14 +4,17 @@
 - G2 : Allow the farmers to retrieve personalized suggestions (*On what are based suggestions ? Weather, location, soil humidity, crop, best practices given by others*)    
 - G3 : Allow the farmers to access data about weather and soil conditions and predictions (*In what area ? 10/150 km What kind of data exactly ?*)
 - G5 : Allow farmers to discuss on forums (*Check if it is part of G6 or if the means are separated*)
-  - G5.1 : Allow farmers to participate to a forum
-  - G5.1 : Allow farmers to create a forum 
+
 
 
 - G1 : Allow farmers to get advices for optimizing their production  
 * Allow farmers to retrieve personalized suggestions if they perform poorly  
 * Allow farmers to discuss with other farmers about their issues
-* Allow farmers to send a specific help request
+  - G5.1 : Allow farmers to create a forum
+  - G5.2 : 
+  - G5.3 : Allow farmers to send messages on a forum already created
+* Allow farmers to send a specific help request   
+
 
 - G2 : Allow farmers to get data that impact their production 
 * Allow farmers to access data about weather conditions and predictions  
