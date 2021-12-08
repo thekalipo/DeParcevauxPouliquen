@@ -1,11 +1,16 @@
 ## Analysis of the World and Shared Phenomena  
 
 World Phenomena:  
-- Farmers produce certain amount of food  
-- Farmers irrigate their fields  
-- Weather (adverse events) impacts the soil humidity  
-- Weather forecasts  
-- Farmers choose their crops
+- Farmers seed their crops
+- Farmers fertilize their crops
+- Farmers harvest their crops
+- Farmers measure their production
+- Water consumption figures are updated (every ... ? by farmers or another state system ?)      
+- Soil moisture figures are updated 
+- Vegetation index figures are updated  
+- Rainfall conditions are updated
+- Rainfall previsions are updated  
+
 
 Shared Phenomena:   
 - Farmer enters production data  
