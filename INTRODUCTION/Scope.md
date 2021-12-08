@@ -16,7 +16,7 @@ World Phenomena:
 Shared Phenomena:   
 - Farmer releases production data  
 - Farmer enters the fertilizers he uses 
-- Farmer releases the amount of fertilizer used  
+- Farmer releases the amount of fertilizer used for croping  
 - Farmer receives special incentive  
 - Farmer receives a request of best pratices  
 - Farmer provides best pratices  
@@ -26,6 +26,7 @@ Shared Phenomena:
 - Farmer creates discussion forum  
 - Farmer searchs for a discussion forum on a specific topic  
 - Farmer sends a message in a discussion forum  
+- Farmer sends a message to another farmer
 
 - Farmer registers and provides personal data (mail, name)  
 - Farmer logs in  
@@ -35,7 +36,20 @@ Shared Phenomena:
 - Policy Maker logs in  
 - Policy Maker provides area he is responsible of
 - Policy Maker asks for a ranking of the farmers he is in charge of, based on some metric
-- Policy Maker 
+- Policy Maker searchs for a discussion forum on a specific topic  
+- Policy Maker sends a message to a farmer
+
+- DREAM displays a notification to farmer for production release  
+- DREAM displays a notification to farmer for lack of soil or weather data   
+- DREAM displays a notification to farmer for new message from another farmer  
+- DREAM displays a notification to farmer for help request proposal  
+- DREAM displays a notification to farmer for best practice      
+
+
+- DREAM displays a notification to policy maker for help request from a farmer
+- DREAM displays a notification to policy maker for new registration  
+- DREAM displays a notification to policy maker for completion of production data
+
 
 Machine Phenomena:   
 - Identifies best performing farmers wrt meteorological events  
