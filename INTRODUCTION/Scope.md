@@ -32,3 +32,5 @@ Machine Phenomena:
 - Fetchs weather forecasts  
 - Fetchs data from water irrigation system
 - Fetchs data from sensors
+
+![image](https://user-images.githubusercontent.com/92787100/145258221-82660b88-212f-4d45-a83c-38dfcd7a2da7.png)
