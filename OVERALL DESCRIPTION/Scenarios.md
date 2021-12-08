@@ -14,7 +14,7 @@ Shyla has just finished his crop. She measures her production. She logs in on th
 Dhruv's old tractor is broken. He wonders if he should try to repair it, if possible, and if not, what modern model he should choose. He looks for feedbacks on the forum discussion of the DREAM platform. As he can't find any on the kind of engine he owns, he creates a new topic, explains his issue and waits for answers.
 
 ### Scenario 4 : Prediction check 
-Ashwin wants to know what are the soil and weather conditions of his mandal to correctly dose his fertilizer. He logs in on the DREAM platform. He goes to the page "Soil and weather". He checks the soil moisture data. Since the
+Ashwin wants to know what are the soil and weather conditions of his mandal to correctly dose his fertilizer. He logs in on the DREAM platform. He goes to the page "Soil and weather". He checks the soil moisture data, weather conditions and predictions. (?) Since the soil
 
 ### Scenario 5 : Request for production data and type release
 Between April and October, Amar crops and harvests rice during the so-called "Kharif"season. In November, he receives a notification from DREAM that urges him to release his production data - seed variety, seed rate, production amount, surface area of the cultivated fields, location (?), start and end date - by the end of the month. He instantly performs. On the first of December, a notification telling the completudeness of the database gathering the production data of the farmers in Amar's area (?) is sent by the system to the dedicated policy maker.
