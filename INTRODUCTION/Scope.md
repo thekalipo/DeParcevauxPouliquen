@@ -3,8 +3,9 @@
 World Phenomena:  
 - Farmers seed their crops
 - Farmers fertilize their crops
+- Farmers measure the amount of fertilizer used for a specific croping  
 - Farmers harvest their crops
-- Farmers measure their production
+- Farmers measure their production  
 - Water consumption figures are updated (every ... ? by farmers or another state system ?)      
 - Soil moisture figures are updated 
 - Vegetation index figures are updated  
@@ -13,22 +14,28 @@ World Phenomena:
 
 
 Shared Phenomena:   
-- Farmer enters production data  
-- Sensor measures the humidity  
+- Farmer releases production data  
+- Farmer enters the fertilizers he uses 
+- Farmer releases the amount of fertilizer used  
 - Farmer receives special incentive  
 - Farmer receives a request of best pratices  
 - Farmer provides best pratices  
 - Farmer visualizes the weather forecasts  
 - Farmer visualizes personalized suggestions concerning crops and fertilizers  
-- Farmer inserts problem he faces  
-- Farmer requests for help and suggestions of other farmers  
+- Farmer requests for help
 - Farmer creates discussion forum  
-- Farmer participates to discussion forum  
+- Farmer searchs for a discussion forum on a specific topic  
+- Farmer sends a message in a discussion forum  
 
 - Farmer registers and provides personal data (mail, name)  
 - Farmer logs in  
-- Farmer provides company data (location, type of production)  
+- Farmer provides exploitation data (location, type of production)  
 
+- Policy Maker registers and provides personal data (mail, name)  # There should be a protection for this process
+- Policy Maker logs in  
+- Policy Maker provides area he is responsible of
+- Policy Maker asks for a ranking of the farmers he is in charge of, based on some metric
+- Policy Maker 
 
 Machine Phenomena:   
 - Identifies best performing farmers wrt meteorological events  
