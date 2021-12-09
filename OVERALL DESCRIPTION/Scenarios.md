@@ -32,7 +32,7 @@ Nikhil is a policy maker. On December, 1st, he receives a notification from DREA
 Ananya is a policy maker. On December, 1st, she receives a notification from DREAM telling that all farmers of her area have delivered their production data. She selects some performance metrics among those proposed. The systems ranks the farmers accordingly and displays the ranking. Ananya selects the farmers that may require help. Based on the data of these farmers and figures of the previous years, the system computes the personalized suggestions to each of them (should/could it be computed ?). She sends them a message via DREAM to tell them these suggestions and propose them to be helped. 
 
 ### Scenario 10 : Major issues identification
-Nila is a policy maker. Crop is coming to end. She wwants to correctly understand the issues that face the farmers of her area, in order to ask relevant questions to well performing farmers. She spends some time on forum discussions and note the most repeating concerns of farmers.
+Nila is a policy maker. Crop is coming to end. She wants to correctly understand the issues that face the farmers of her area, in order to ask relevant questions to well performing farmers. She spends some time on forum discussions and note the most repeating concerns of farmers.
 
 ### Scenario 11 : Help request
 Tamia requires the insight of some expert on crops for the coming seeding. She goes to the "help request" section. She sends message. Based on her location, the system forwards the message to the adequate policy maker. The latter will send the request to an agronomist, who will afterwards contact  Tamia.
