@@ -10,14 +10,16 @@
 - G1 : Allow farmers to get advices for optimizing their production  
 * Allow farmers to retrieve personalized suggestions if they perform poorly  
 * Allow farmers to discuss with other farmers about their issues
-  - G5.1 : Allow farmers to create a forum
-  - G5.2 : 
-  - G5.3 : Allow farmers to send messages on a forum already created
+  - G1.1 : Allow farmers to create a forum
+  - G1.2 : Allow farmers to look for a specific topic among discussion forums
+  - G1.3 : Allow farmers to send messages on a forum already created
+  - G1.4 : Allow farmers to contact another farmer privately
 * Allow farmers to send a specific help request   
 
 
 - G2 : Allow farmers to get data that impact their production 
 * Allow farmers to access data about weather conditions and predictions  
+  - G2.1 : 
 * Allow farmers to access data about soil moisture
 * Allow farmers to access data about soil organic carbon
 
