@@ -8,12 +8,12 @@
 
 
 - G1 : Allow farmers to get advices for optimizing their production  
-* Allow farmers to retrieve personalized suggestions if they perform poorly  
-* Allow farmers to discuss with other farmers about their issues
-  - G1.1 : Allow farmers to create a forum
-  - G1.2 : Allow farmers to look for a specific topic among discussion forums
-  - G1.3 : Allow farmers to send messages on a forum already created
-  - G1.4 : Allow farmers to contact another farmer privately
+  * Allow farmers to retrieve personalized suggestions if they perform poorly  
+  * Allow farmers to discuss with other farmers about their issues
+    - G1.2.1 : Allow farmers to create a forum
+    - G1.2.2 : Allow farmers to look for a specific topic among discussion forums
+    - G1.2.3 : Allow farmers to send messages on a forum already created
+    - G1.2.4 : Allow farmers to contact another farmer privately
 * Allow farmers to send a specific help request   
 
 
