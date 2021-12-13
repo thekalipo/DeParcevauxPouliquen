@@ -41,6 +41,8 @@ Tamia requires the insight of some expert on crops for the coming seeding. She g
 ??
 
 
+### Scenario 13 : Policy Maker change
+
 (
 - forum pour les discussions entre fermiers (les PM y ont aussi accès)   
 - suggestions sont donnés par les policy makers avec les meilleures pratiques des bons fermiers. Tous les ans    
