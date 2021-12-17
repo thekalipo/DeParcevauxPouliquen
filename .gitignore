@@ -21,3 +21,4 @@ latex/*.mtc
 latex/*.mtc1
 latex/*.out
 latex/*.synctex.gz
+latex/main.pdf
