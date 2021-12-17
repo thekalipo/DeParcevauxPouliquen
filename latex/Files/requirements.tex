@@ -50,7 +50,7 @@ Organize this section according to the rules defined in the project description.
 		& 3.	The system displays a form with the following fields: seed variety (to be chosen among a certain list), seed rate, production amount, surface area of the cultivated fields, fertilizer (can be several, to be chosen among a certain list), amount of fertilizer used (one field per fertilizer used), start and end date.                                                 \tabularnewline 
 		& 4.	The farmer completes the fields, with respect to the measure units given by the system.                                           \tabularnewline
 		& 5.	The farmer confirms.                                               \tabularnewline
-		& 6.	The system adds the data to the database.      
+		& 6.	The system adds the data to the database with the status "Complete".      
 		\tabularnewline \hline
 		Exit conditions 
 		& 
@@ -59,6 +59,8 @@ Organize this section according to the rules defined in the project description.
 		Exceptions 
 		& 
 		-	The data provided by the farmer have an invalid type. The system displays a message prompting the farmer to modify the dedicated field(s) of the form
+		\tabularnewline
+		&-	All the data are not provided (e.g. the end date, the production amount) because cropping has not ended yet. The data are added to the database with an “Incomplete” status. If seed variety, seed rate, surface area or start date are not provided, the system displays an error message
 		\tabularnewline
 		\hline
 	\end{tabularx}   
@@ -98,23 +100,209 @@ Organize this section according to the rules defined in the project description.
 	\centering
 	\begin{tabularx}{\linewidth}{|l|X|}
 		\hline
-		Name & \multicolumn{1}{c|}{\textit{\textbf{}}}                                                   \tabularnewline \hline
+		Name & \multicolumn{1}{c|}{\textit{\textbf{PredictionCheck}}}                                                   \tabularnewline \hline
 		Actors                                               & Farmers                                                    \tabularnewline \hline
 		Entry conditions                                              &
+		The farmer is already registered on the DREAM platform
 		\tabularnewline
 		&
 		\tabularnewline \hline
-		Event flow                                         &                                            \tabularnewline 
-		&                                            \tabularnewline 
-		&                                            \tabularnewline 
-		&                                     \tabularnewline
-		&                                            \tabularnewline
-		&                                      \tabularnewline
-		&                                 \tabularnewline
-		&                               \tabularnewline
-		&                               \tabularnewline \hline
+		Event flow                                         & 1.	The farmer logs in on the platform                                         \tabularnewline 
+		& 2.	From the homepage, the farmer clicks on the desired button, between “soil”, “weather” and “vegetation index”.                                          \tabularnewline 
+		& 3.	Based on the location of the farmer, the system displays a map for the conditions (and eventually another one for the predictions), with the time period.                                           \tabularnewline 
+		& 4.	The farmer can optionally zoom in/out and move on the map provided by the system.                                    \tabularnewline \hline
 		Exit conditions 
+		& The farmer leaves the homepage
+		\tabularnewline \hline
+		Exceptions 
+		& -	There is no data corresponding to the current time or the location of the farmer. In the first case, the system proposes to display results for a close time (if it exists). In the second case, it zooms out until finding a place where data are available (if they exist)
+		\tabularnewline
+		\hline
+	\end{tabularx}   
+\end{table}
+
+\begin{table}[htbp]
+	\centering
+	\begin{tabularx}{\linewidth}{|l|X|}
+		\hline
+		Name & \multicolumn{1}{c|}{\textit{\textbf{RequestForProductionData}}}                                                   \tabularnewline \hline
+		Actors                                               & Farmers                                                    \tabularnewline \hline
+		Entry conditions                                        
+		& The farmer is already registered on the DREAM platform and has not confirmed the data for the last cropping season.
+		\tabularnewline
+		&
+		The current date is in a 15 days-range before the end of a cropping season (15/11-01/12, 15/04-01/5 or 15/07-01/08).
+		\tabularnewline \hline
+		Event flow                                         & 1.	The system sends an e-mail to recall the farmer to release the production data                                           \tabularnewline 
+		& 2.	The farmer logs in on the platform.                                             \tabularnewline 
+		& 3.	The system displays a notification with a link to the “Release production data” tab.                                           \tabularnewline 
+		& 4.	The farmer clicks on the link.                                    \tabularnewline
+		& 5.	The system displays the “Release production data” tab, with an additional “Confirm the data for this season” button.                                           \tabularnewline
+		& 6.	The farmer eventually creates a new release or completes the releases with an "Incomplete" (see ProductionRelease use case).                                     \tabularnewline
+		& 7.	Within 15 days, the farmer clicks on the button “Confirm the data for this season”                                \tabularnewline
+		& 8.	The system adds the farmer to the list of farmers who completed their release for the season                              \tabularnewline
+		& 9.	The system hides the button “Confirm the data for this season”                       \tabularnewline \hline
+		Exit conditions 
+		& The system adds the farmer to the list of farmers who completed their release 
+		\tabularnewline \hline
+		Exceptions 
 		& 
+		-	The farmer does not click on the button “Confirm the data for this season”. At every log in, the system will display the notification to release the data production
+		\tabularnewline
+		&
+		-	The farmer adds or modifies a production data release after having clicked on the button “Confirm the data for this season”. The system removes the farmer from the list of farmers who completed their release for the season. The system displays the button “Confirm the data for this season” again
+		\tabularnewline
+		\hline
+	\end{tabularx}   
+\end{table}
+
+\begin{table}[htbp]
+	\centering
+	\begin{tabularx}{\linewidth}{|l|X|}
+		\hline
+		Name & \multicolumn{1}{c|}{\textit{\textbf{TopicResearch}}}                                                   \tabularnewline \hline
+		Actors                                               & Farmer, Policy Maker                                                   \tabularnewline \hline
+		Entry conditions                                              & The actor is already registered on the DREAM platform
+		\tabularnewline
+		&
+		\tabularnewline \hline
+		Event flow                                         & 1.	The actor logs in on the platform and clicks on the “Forum” tab.                                           \tabularnewline 
+		& 2.	The actor clicks on the “Search” button.                                           \tabularnewline 
+		& 3.	The system displays a search bar and two optional filters: date and tags.                                           \tabularnewline 
+		& 4.	The actor completes the field and eventually add some filters.                                    \tabularnewline
+		& 5.	The actor confirms the request.                                           \tabularnewline
+		& 6.	The system fetches and displays the list of results.                                     \tabularnewline
+		& 7.	The actor clicks on one of them.                                \tabularnewline
+		& 8.	The system displays the discussion thread on the topic.                              \tabularnewline
+		& 9.	The actor can optionally add a message, reply to another one, or put a thumb up/down to someone’s contribution. 
+		\tabularnewline
+		& 10.	The systems commits the eventual updates in the database                             \tabularnewline \hline
+		Exit conditions 
+		& The actor leaves the "Forum" tab
+		\tabularnewline \hline
+		Exceptions 
+		& -	The system doesn’t find any result that matches to the actor request. It displays an error message and proposes to make another request.
+		\tabularnewline
+		& -	The data provided by the actor have an invalid type. The system displays a message prompting  to modify the fields concerned.
+		\tabularnewline
+		\hline
+	\end{tabularx}   
+\end{table}
+
+
+\begin{table}[htbp]
+	\centering
+	\begin{tabularx}{\linewidth}{|l|X|}
+		\hline
+		Name & \multicolumn{1}{c|}{\textit{\textbf{ContactingPoorlyPerformingFarmers}}}                                                   \tabularnewline \hline
+		Actors                                               & Policy Maker                                                    \tabularnewline \hline
+		Entry conditions                                              &
+		The policy maker is already registered on the DREAM platform.
+		The farmers have already released their production data.
+		\tabularnewline
+		&
+		\tabularnewline \hline
+		Event flow                                         & 1.	The policy maker logs in on the platform and clicks on the “Visualize productivity” tab.                                         \tabularnewline 
+		& 2.	The policy maker chooses a metric, a period, ticks the “bottom” box and enters the number of results wanted.                                           \tabularnewline 
+		& 3.	The system fetches and displays the results ordered by the performance metric.                                           \tabularnewline 
+		& 4.	The policy maker clicks on some farmers line.                                    \tabularnewline
+		& 5.	The system displays more precise information about the results (seed variety and rate, field surface, production amount, fertilizers, amount of fertilizer used, start and end date).                                           \tabularnewline
+		& 6.	The policy maker clicks on the “Contact” button.                                     \tabularnewline
+		& 7.	The policy maker enters a message in the dedicated field and ticks the “help suggestion” box.                                \tabularnewline
+		& 8.	The system sends the message to the farmer. The message includes an help request form.                               \tabularnewline \hline
+		Exit conditions 
+		& The message arrives in the farmer’s personal contact tab
+		\tabularnewline \hline
+		Exceptions 
+		& -	There is not any result on the policy maker request (because no production data release or lacking some fields for the chosen metric). The system displays an error message and eventually proposes to choose another metric.
+		\tabularnewline
+		\hline
+	\end{tabularx}   
+\end{table}
+
+\begin{table}[htbp]
+	\centering
+	\begin{tabularx}{\linewidth}{|l|X|}
+		\hline
+		Name & \multicolumn{1}{c|}{\textit{\textbf{HelpRequest}}}                                                   \tabularnewline \hline
+		Actors                                               & Farmer                                               \tabularnewline \hline
+		Entry conditions                                              &
+		The farmer is already registered on the DREAM platform.
+		\tabularnewline
+		&
+		\tabularnewline \hline
+		Event flow                                         & 1.	The policy maker logs in on the platform and clicks on the “Contact” tab.                                        \tabularnewline 
+		& 2.	The farmer clicks on the “New help request” button.                                   \tabularnewline 
+		& 3.	The farmer writes down a message and ticks for the correct level of priority.                                           \tabularnewline 
+		& 4.	The farmer confirms.                                   \tabularnewline
+		& 5.	The system sends the message to the dedicated policy maker’s messages tab.                                          \tabularnewline
+		& 6.	An e-mail is sent to the policy maker’s address                                    \tabularnewline
+		\hline
+		Exit conditions 
+		& The message arrives in the policy maker’s personal box
+		\tabularnewline \hline
+		Exceptions 
+		& 
+		-	There is no registered policy maker dedicated to the area. In that case, an error message is displayed to the farmer, and a warning message is sent to the developer to urge him/her to contact the adequate policy maker.
+		\tabularnewline
+		\hline
+	\end{tabularx}   
+\end{table}
+
+\begin{table}[htbp]
+	\centering
+	\begin{tabularx}{\linewidth}{|l|X|}
+		\hline
+		Name & \multicolumn{1}{c|}{\textit{\textbf{ContactingWellPerformingFarmers}}}                                                   \tabularnewline \hline
+		Actors                                               & Policy Maker                                               \tabularnewline \hline
+		Entry conditions                                              &
+		The policy maker is already registered on the DREAM platform.
+		The farmers have already released their production data.
+		\tabularnewline
+		&
+		\tabularnewline \hline
+		Event flow                                         & 1.	The policy maker logs in on the platform and clicks on the “Visualize productivity” tab.                                        \tabularnewline 
+		& 2.	The policy maker chooses a metric, a period, ticks the “bottom” box and enters the number of results wanted.                                    \tabularnewline 
+		& 3.	The system fetches and displays the results ordered by the performance metric.                                          \tabularnewline 
+		& 4.	The policy maker clicks on some farmers line.                                    \tabularnewline
+		& 5.	The system displays more precise information about the results (seed variety and rate, field surface, production amount, fertilizers, amount of fertilizer used, start and end date).                                          \tabularnewline
+		& 6.	The policy maker clicks on the “Contact” button.                                    \tabularnewline
+		& 7.	The policy maker enters a message in the dedicated field and ticks the “e-voucher” box and enters the amount of the incentive. Within the message, the policy maker asks for suggestions to the farmer.                               \tabularnewline
+		& 8.	The system sends the message and an e-voucher link to the farmer
+		\tabularnewline \hline
+		Exit conditions 
+		& The message arrives in the farmer’s personal contact tab
+		\tabularnewline \hline
+		Exceptions 
+		& -	There is not any result on the policy maker request (because no production data release or lacking some fields for the chosen metric). The system displays an error message and eventually proposes to choose another metric.
+		\tabularnewline
+		\hline
+	\end{tabularx}   
+\end{table}
+
+
+\begin{table}[htbp]
+	\centering
+	\begin{tabularx}{\linewidth}{|l|X|}
+		\hline
+		Name & \multicolumn{1}{c|}{\textit{\textbf{}}}                                                   \tabularnewline \hline
+		Actors                                               &                                                \tabularnewline \hline
+		Entry conditions                                              &
+		
+		\tabularnewline
+		&
+		\tabularnewline \hline
+		Event flow                                         &                                         \tabularnewline 
+		&                                    \tabularnewline 
+		&                                           \tabularnewline 
+		&                                    \tabularnewline
+		&                                           \tabularnewline
+		&                                     \tabularnewline
+		&                                \tabularnewline
+		& 
+		\tabularnewline \hline
+		Exit conditions 
+		&
 		\tabularnewline \hline
 		Exceptions 
 		& 
@@ -122,6 +310,7 @@ Organize this section according to the rules defined in the project description.
 		\hline
 	\end{tabularx}   
 \end{table}
+
 
 \begin{figure}
 	\centering
