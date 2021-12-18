@@ -400,6 +400,28 @@ code {
     System-)LessProductiveFarmer: advice(message)
     System-->>-PolicyMaker: done
 </div></code></pre>
+<h2 id="registration">registration</h2>
+<pre><code class="language-mermaid"><div class="mermaid">sequenceDiagram
+    actor Farmer
+    participant System
+    participant DataBase
+    actor PolicyMaker
+    Farmer->>+System: register(name, surname, email, location, geotracking)
+    System->>DataBase: exists(email)
+    DataBase-->>System: query response
+    alt no email corresponding
+        System--)Farmer: verificationEmail
+        Farmer--)System: verification link
+        System->>DataBase: insertUser
+        DataBase-->>System: done
+        System->>+DataBase: retriveEmailPolicyMaker
+        DataBase-->>-System: emails
+        System--)PolicyMaker: sendEmail
+        System-->>Farmer: done
+    else
+        System-->>-Farmer: invalid credentials
+    end
+</div></code></pre>
 
 </body>
 </html>

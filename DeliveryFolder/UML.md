@@ -37,3 +37,27 @@ sequenceDiagram
     System-)LessProductiveFarmer: advice(message)
     System-->>-PolicyMaker: done
 ```
+
+## registration
+```mermaid
+sequenceDiagram
+    actor Farmer
+    participant System
+    participant DataBase
+    actor PolicyMaker
+    Farmer->>+System: register(name, surname, email, location, geotracking)
+    System->>+DataBase: exists(email)
+    DataBase-->>-System: query response
+    alt no email corresponding
+        System--)Farmer: verificationEmail
+        Farmer--)System: verification link
+        System->>+DataBase: insertUser
+        DataBase-->>-System: done
+        System->>+DataBase: retrieveEmailPolicyMaker(location)
+        DataBase-->>-System: emails
+        System--)PolicyMaker: sendEmail
+        System-->>Farmer: done
+    else
+        System-->>-Farmer: invalid credentials
+    end
+```
