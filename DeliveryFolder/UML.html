@@ -365,10 +365,56 @@ code {
           : 'default'
     });
   </script>
-<h1 id="uml-diagram-test">UML diagram test</h1>
+<h1 id="uml-diagram">UML diagram</h1>
+<h2 id="registration">registration</h2>
 <pre><code class="language-mermaid"><div class="mermaid">sequenceDiagram
-    participant Farmer1
-    participant Farmer2
+    actor Farmer
+    participant System
+    participant DataBase
+    actor PolicyMaker
+    Farmer->>+System: register(name, surname, password, email, location, geotracking)
+    System->>+DataBase: exists(email)
+    DataBase-->>-System: query response
+    alt no email corresponding
+        System-)Farmer: verificationEmail
+        Farmer-)System: verification link
+        System->>+DataBase: insertUser
+        DataBase-->>-System: done
+        System->>+DataBase: retrieveEmailPolicyMaker(location)
+        DataBase-->>-System: emails
+        System-)PolicyMaker: sendEmail
+        System-->>Farmer: done
+    else
+        System-->>-Farmer: invalid credentials
+    end
+</div></code></pre>
+<h2 id="login">login</h2>
+<pre><code class="language-mermaid"><div class="mermaid">sequenceDiagram
+    actor Farmer
+    participant System
+    participant DataBase
+    Farmer->>+System: login(email, password)
+    System->>DataBase: retrieveEmail(email)
+    Database-->>System: email and password
+    alt email corresponding
+        System->>System: encrypt password
+        System->>System: test two passwords
+        Note over System,System: test on correspondance of the passwords are the same is done using a library
+        alt passwords corresponds
+            System-->>Farmer: logged in
+        else
+            System-->>Farmer: invalid credentials
+        end
+    else
+        System-->>Farmer: invalid credentials
+    end
+</div></code></pre>
+<h2 id="production-release">production release</h2>
+<p>No need to do it, too simple case</p>
+<h2 id="forum-creation">Forum Creation</h2>
+<pre><code class="language-mermaid"><div class="mermaid">sequenceDiagram
+    actor Farmer1
+    actor Farmer2
     participant System
     participant DataBase
     Farmer1->>+System: createForum(title, description, images)
@@ -379,10 +425,26 @@ code {
     Farmer2->>+System: replyToForum(id)
     System-->>-Farmer2: reply effective
 </div></code></pre>
+<h2 id="request-for-production-data">Request for Production Data</h2>
 <pre><code class="language-mermaid"><div class="mermaid">sequenceDiagram
-    participant PolicyMaker
-    participant BestFarmer
-    participant LessProductiveFarmer
+    actor Farmer
+    participant System
+    System -) Farmer: send Email
+    Note over System, Farmer: ask to release production data
+    Farmer ->>+System: login
+    System-->>Farmer: logged in
+    Farmer ->>System: production data
+    System-->>-Farmer: production data saved
+    Farmer->>+System: complete production data
+    System-->>-Farmer: complete effective
+    Farmer->>+System: confirm the data
+    System-->>-Farmer: data confirmed
+</div></code></pre>
+<h2 id="contact-farmers">Contact farmers</h2>
+<pre><code class="language-mermaid"><div class="mermaid">sequenceDiagram
+    actor PolicyMaker
+    actor BestFarmer
+    actor LessProductiveFarmer
     participant System
     PolicyMaker->>+System: retreive best performers
     System-->>PolicyMaker: best performers
@@ -400,27 +462,18 @@ code {
     System-)LessProductiveFarmer: advice(message)
     System-->>-PolicyMaker: done
 </div></code></pre>
-<h2 id="registration">registration</h2>
+<h2 id="help-request">help request</h2>
 <pre><code class="language-mermaid"><div class="mermaid">sequenceDiagram
-    actor Farmer
-    participant System
-    participant DataBase
     actor PolicyMaker
-    Farmer->>+System: register(name, surname, email, location, geotracking)
-    System->>DataBase: exists(email)
-    DataBase-->>System: query response
-    alt no email corresponding
-        System--)Farmer: verificationEmail
-        Farmer--)System: verification link
-        System->>DataBase: insertUser
-        DataBase-->>System: done
-        System->>+DataBase: retriveEmailPolicyMaker
-        DataBase-->>-System: emails
-        System--)PolicyMaker: sendEmail
-        System-->>Farmer: done
-    else
-        System-->>-Farmer: invalid credentials
-    end
+    participant System
+    PolicyMaker ->>+System: login
+    System-->>PolicyMaker: logged in
+    PolicyMaker ->>System: production data
+    System-->>-PolicyMaker: production data saved
+    PolicyMaker->>+System: complete production data
+    System-->>-PolicyMaker: complete effective
+    PolicyMaker->>+System: confirm the data
+    System-->>-PolicyMaker: data confirmed
 </div></code></pre>
 
 </body>
