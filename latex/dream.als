@@ -53,13 +53,13 @@ sig Suggestion {
 pmToFarmer: PolicyMaker -> Farmer
 }
 
-//Function
+//Functions
 fun farmersInArea [pm:PolicyMaker] : set Farmer {  // Gives the set of farmers in the pm area
 policyMaker.pm
 }
 
 
-//Fact
+//Facts
 fact uniqueEmail {
 all disj u1, u2: User |
 u1.email != u2.email
@@ -190,8 +190,7 @@ all pm:PolicyMaker|farmersInArea[pm]=pm.farmersWithConfirmation)
 }
 
 
-//Given that poorly performing farmers ask for help, well performing ones give their best practices and policy makers make suggestions when required,
-//all poorly performing farmers get advices at the end of the analysis period.
+//Given that poorly performing farmers ask for help, well performing ones give their best practices and policy makers make suggestions when required, all poorly performing farmers get advices at the end of the analysis period.
 assert EndOfAnalysisPeriod {
 definePoorWell and PoorRequestHelp and PmSuggestWhenHelpRequest and WellGiveBestPractices implies (
 all f:Farmer | f in PoorlyPerformingFarmers.farmers implies(
@@ -206,6 +205,7 @@ all f:Farmer | all ir:IncompleteRelease | (all f2:Farmer| ir not in f2.productio
 
 //Commands
 
+run {} for 5
 //check EndOfReleasePeriod for 5
 //check EndOfAnalysisPeriod for 5
 //check AdditionDeconfirmABatch for 5
