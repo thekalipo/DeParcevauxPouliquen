@@ -5,20 +5,51 @@ Organize this section according to the rules defined in the project description.
 The user interface will be responsive and should be multiple platform. Even if it should be mainly done for phones. \newline
 Where as the application for policy makers should be also responsive but mainly optimized for computer.
 
-For farmers :
-login/registration
-weather predictions page
-forum
-release production data
+First we will present the interfaces for farmers. They are not exhaustive but the goal here is to give a good overview of what the app will look like. The figure \ref{Fig:interface_login} represents the general login page. Depending on the mail the user will then be a farmer or a policy maker.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.2\columnwidth]{Images/login.png}
+	\caption{login from a phone}
+	\label{Fig:interface_login}
+\end{figure}
 
-policy maker
-message ?
+The figure \ref{Fig:interface_forum} shows the view of the forum on a phone, this view as the others will also be visible from a computer as all the app will be responsive. Next to it the figure \ref{Fig:interface_meteo} gives access to the main data simply and in a rapid way.
+\begin{figure}[H]
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=0.6\columnwidth]{Images/forum.png}
+		\caption{forum from a phone}
+		\label{Fig:interface_forum}
+	\end{minipage}
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=0.6\columnwidth]{Images/meteo.png}
+		\caption{have access to data}
+		\label{Fig:interface_meteo}
+	\end{minipage}\hfill
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\columnwidth]{Images/visualize_farmers.png}
+	\caption{Policy Maker comparing farmer on different factors}
+	\label{Fig:interface_visu_farmers}
+\end{figure}
 
-visualize best farmers
-
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\columnwidth]{Images/messages_policy_maker.png}
+	\caption{Policy Maker messages}
+	\label{Fig:interface_messages_policy_maker}
+\end{figure}
+% do not display the following
+\iffalse
 \subsubsection{Hardware Interfaces}
 \subsubsection{Software Interfaces}
+\fi % end of will not apear
+
+
 \subsubsection{Communication Interfaces}
+The communication interfaces of the different sensors is external.
 \subsection{Functional requirements}
 % Definition  of  use  case  diagrams,  use  cases  and  associated sequence/activity diagrams, and mapping on requirements 
 \begin{table}[htbp]
