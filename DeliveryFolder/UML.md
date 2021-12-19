@@ -19,7 +19,7 @@ sequenceDiagram
         System-)PolicyMaker: sendEmail
         System-->>Farmer: done
     else
-        System-->>-Farmer: invalid credentials
+        System-->>-Farmer: email already in use
     end
 ```
 ## login
@@ -72,13 +72,17 @@ sequenceDiagram
     participant System
     System -) Farmer: send Email
     Note over System, Farmer: ask to release production data
-    Farmer ->>+System: login
-    System-->>Farmer: logged in
-    Farmer ->>System: production data
+    Farmer ->>+System: production data
+    System ->>+DataBase: save production data
+    DataBase->>-System: saved
     System-->>-Farmer: production data saved
     Farmer->>+System: complete production data
+    System ->>+DataBase: save production data
+    DataBase->>-System: saved
     System-->>-Farmer: complete effective
     Farmer->>+System: confirm the data
+    System->>+DataBase: production data confirmed
+    DataBase-->>-System: done
     System-->>-Farmer: data confirmed
 ```
 
@@ -96,6 +100,29 @@ sequenceDiagram
 
     System->>+BestFarmer: request for advices
     BestFarmer-->>-System: advices
+
+    System->>+PolicyMaker: advices
+    PolicyMaker-->>-System: received
+    PolicyMaker->>+System: less productive farmers
+    System-->>PolicyMaker: farmers 
+    PolicyMaker->> System: sendAdvices(message, farmers)
+    System-)LessProductiveFarmer: advice(message)
+    System-->>-PolicyMaker: done
+```
+### v2 more in accordance to the use cases
+```mermaid
+sequenceDiagram
+    actor PolicyMaker
+    actor BestFarmer
+    actor LessProductiveFarmer
+    participant System
+    PolicyMaker->>+System: retreive best performers
+    System-->>PolicyMaker: best performers
+    PolicyMaker->>System: sendMessageToBestPerformers(message)
+    System-)BestFarmer: message request for advices
+    System-->>-PolicyMaker: done
+
+    BestFarmer-)System: message giving advices
 
     System->>+PolicyMaker: advices
     PolicyMaker-->>-System: received

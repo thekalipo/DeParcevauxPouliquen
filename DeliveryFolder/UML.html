@@ -385,7 +385,7 @@ code {
         System-)PolicyMaker: sendEmail
         System-->>Farmer: done
     else
-        System-->>-Farmer: invalid credentials
+        System-->>-Farmer: email already in use
     end
 </div></code></pre>
 <h2 id="login">login</h2>
@@ -431,13 +431,17 @@ code {
     participant System
     System -) Farmer: send Email
     Note over System, Farmer: ask to release production data
-    Farmer ->>+System: login
-    System-->>Farmer: logged in
-    Farmer ->>System: production data
+    Farmer ->>+System: production data
+    System ->>+DataBase: save production data
+    DataBase->>-System: saved
     System-->>-Farmer: production data saved
     Farmer->>+System: complete production data
+    System ->>+DataBase: save production data
+    DataBase->>-System: saved
     System-->>-Farmer: complete effective
     Farmer->>+System: confirm the data
+    System->>+DataBase: production data confirmed
+    DataBase-->>-System: done
     System-->>-Farmer: data confirmed
 </div></code></pre>
 <h2 id="contact-farmers">Contact farmers</h2>
