@@ -45,8 +45,6 @@ The figure \ref{Fig:interface_forum} shows the view of the forum on a phone, thi
 		\centering
 
 		\includegraphics[width=0.6\columnwidth]{Images/meteo.png}
-\fi % end of will not apear
-
 
 
 The communication interfaces of the different sensors is external.
@@ -87,10 +85,6 @@ The communication interfaces of the different sensors is external.
 	\label{Fig:interface_messages_policy_maker}
 
 \end{figure}
-
-% do not display the following
-
-\iffalse
 
 \subsubsection{Hardware Interfaces}
 \subsubsection{Software Interfaces}
@@ -341,45 +335,10 @@ The communication interfaces of the different sensors is external.
 
 \begin{table}[htbp]
 	\centering
-	\begin{tabularx}{\linewidth}{|l|X|}           _       ion_
+	\begin{tabularx}{\linewidth}{|l|X|}          % _       ion_
 		\hline
 		Name & \multicolumn{1}{c|}{\textit{\textbf{ContactingWellPerformingFarmers}}}                                                   \tabularnewline \hline
 		Actors                                               & Policy Maker                                               \tabularnewline \hline
-\begin{figure}
-
-	\centering
-
-	\includegraphics[width=\textwidth]{Images/seq_registration.png}
-
-	\caption{\label{fig:seqregistration} Sequence diagram on the registration of a farmer}
-
-\end{figure}
-
-
-
-\begin{figure}
-
-	\centering
-
-	\includegraphics[width=\textwidth]{Images/seq_login.png}
-
-	\caption{\label{fig:seqlogin} Sequence diagram on the login of a farmer}
-
-\end{figure}
-
-
-
-\begin{figure}
-
-	\centering
-
-	\includegraphics[width=\textwidth]{Images/seq_request_data.png}
-
-	\caption{\label{fig:seqrequestdata} Sequence diagram on the request for production data from a farmer point of view}
-
-\end{figure}
-
-
 
 		Entry conditions                                              &
 		The policy maker is already registered on the DREAM platform.
@@ -406,6 +365,39 @@ The communication interfaces of the different sensors is external.
 	\end{tabularx}   
 \end{table}
 
+\begin{figure}
+	
+	\centering
+	
+	\includegraphics[width=\textwidth]{Images/seq_registration.png}
+	
+	\caption{\label{fig:seqregistration} Sequence diagram on the registration of a farmer}
+	
+\end{figure}
+
+
+
+\begin{figure}
+	
+	\centering
+	
+	\includegraphics[width=\textwidth]{Images/seq_login.png}
+	
+	\caption{\label{fig:seqlogin} Sequence diagram on the login of a farmer}
+	
+\end{figure}
+
+
+
+\begin{figure}
+	
+	\centering
+	
+	\includegraphics[width=\textwidth]{Images/seq_request_data.png}
+	
+	\caption{\label{fig:seqrequestdata} Sequence diagram on the request for production data from a farmer point of view}
+	
+\end{figure}
 
 \begin{figure}
 	\centering
@@ -429,7 +421,7 @@ The communication interfaces of the different sensors is external.
 \begin{figure}
 	\centering
 	\includegraphics[width=\textwidth]{Images/seq-policy-farmers.png}
-	\caption{\label{fig:seq} Sequence diagram showing a policy marker reaching out best performing farmers for advises and send them to less productive farmer}
+	\caption{\label{fig:seqpolicymaker} Sequence diagram showing a policy marker reaching out best performing farmers for advises and send them to less productive farmer}
 \end{figure}
 
 \subsection{Performance Requirements}
