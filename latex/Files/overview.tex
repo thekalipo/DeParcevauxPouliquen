@@ -48,5 +48,52 @@ Nila is a policy maker. Crop is coming to end. She wants to correctly understand
 
 Tamia requires the insight of some expert on crops for the coming seeding. She goes to the "help request" section. She sends message. Based on her location, the system forwards the message to the adequate policy maker. The latter will send the request to an agronomist, who will afterwards contact Tamia.
 
+\subsubsection{Product functions}
+
+\begin{itemize}
+	\item
+	R1: When a farmer asks for personalized suggestions, the system should retrieve the weather, soil and location data
+	\item
+	R2: If a farmer performs well, policy makers will request his best practices
+	\item
+	R3: At each end of cropping, the system should request production data of farmers.
+	\item
+	R4: The system fetches using external database the data about soil and irrigation
+	\item
+	R5: The system should compute the performance indicators based on the data provided by farmers
+	\item
+	R6: When a policy maker asks for poor-performing farmers, the system should retrieve the associated farmers.
+	\item
+	R7: When a policy maker asks for well-performing farmers, the system should retrieve the associated farmers.
+	\item
+	R8: The system should grant farmers access to their personal and production data
+\end{itemize}
+
+\subsubsection{Assumptions, dependencies and constraints}
+%TODO
+\begin{itemize}
+	\item
+	Cropping seasons are the same on the whole Telengana State and follow the Kharif/Rabi calendar, see Figure \ref{fig:seasons} % (see Recommended System of Breeder Seed Indent and Supply)
+	\item
+	Farmers put rightful information on their location and data on their production. The monitor of possible fraud will not be taken into account in our app
+	\item
+	Some policy maker are available for each location.
+	\item
+	all farmers that register have access to internet in some way and have access to the app
+	\item
+	
+\end{itemize}
+
+\begin{figure}[H]
+	
+	\centering
+	
+	\includegraphics[width=\columnwidth]{Images/croping-seasons-calendar.png}
+	
+	\caption{Seasons}
+	
+	\label{fig:seasons}
+	
+\end{figure}
 
 
