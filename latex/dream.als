@@ -205,10 +205,10 @@ all f:Farmer | all ir:IncompleteRelease | (all f2:Farmer| ir not in f2.productio
 
 //Commands
 
-run {} for 5
-//check EndOfReleasePeriod for 5
-//check EndOfAnalysisPeriod for 5
-//check AdditionDeconfirmABatch for 5
+//run {} for 5
+check EndOfReleasePeriod for 5
+check EndOfAnalysisPeriod for 5
+check AdditionDeconfirmABatch for 5
 
 
 
