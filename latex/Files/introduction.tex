@@ -1,34 +1,7 @@
-This document has been prepared to help you approaching Latex as a formatting tool for your Travlendar+ deliverables. This document suggests you a possible style and format for your deliverables and contains information about basic formatting commands in Latex. A good guide to Latex is available here \href{https://tobi.oetiker.ch/lshort/lshort.pdf}{https://tobi.oetiker.ch/lshort/lshort.pdf}, but you can find many other good references on the web. 
-
-
-Writing in Latex means writing textual files having a \texttt{.tex} extension and exploiting the Latex markup commands for formatting purposes. Your files then need to be compiled using the Latex compiler. Similarly to programming languages, you can find many editors that help you writing and compiling your latex code. Here \href{https://beebom.com/best-latex-editors/}{https://beebom.com/best-latex-editors/} you have a short oviewview of some of them. Feel free to choose the one you like.  
-
-Include a subsection for each of the following items\footnote{By the way, what follows is the structure of an itemized list in Latex.}:
-\begin{itemize}
-\item
-Purpose: here we include the goals of the project
-\item
-Scope: here we include an analysis of the world and of the shared phenomena
-\item
-Definitions, Acronyms, Abbreviations
-\item
-Revision history
-\item
-Reference Documents 
-\item
-Document Structure
-\end{itemize}
-Below you see how to define the header for a subsection.
 \subsection{Purpose}
 First of all lets define the different goals.
 
 \begin{itemize}
-	\item 
-	G2 : Allow the farmers to retrieve personalized suggestions (On what are based suggestions ? Weather, location, soil humidity, crop, best practices given by others)
-	\item
-	G3 : Allow the farmers to access data about weather and soil conditions and predictions (In what area ? 10/150 km What kind of data exactly ?)
-	\item
-	G5 : Allow farmers to discuss on forums (Check if it is part of G6 or if the means are separated)
 	\item
 	G.1 : Allow farmers to get advices for optimizing their production
 	\subitem
@@ -53,11 +26,18 @@ First of all lets define the different goals.
 	Allow farmers to access data about soil organic carbon
 	\item
 	G3 : Allow policy makers to globally enhance the productivity of the farmers of their area
-	
-	Allow policy makers to identify well and poorly performing farmers of their area, according to a chosen metric
-	Allow policy makers to incent well performing farmers
-	Allow policy makers to fetch best practices among farmers and provide them to others
-	Allow policy makers to send personalized suggestions to poorly performing farmers
+	\subitem
+	G3.1 : Allow policy makers to identify well and poorly performing farmers of their area, according to a chosen metric
+	\subitem
+	G3.2 : Allow policy makers to incent well performing farmers
+	\subitem
+	G3.3 : Allow policy makers to fetch best practices among farmers and provide them to others
+	\subitem
+	G3.4 : Allow policy makers to send personalized suggestions to poorly performing farmers
+	\item
+	G4 : Allow the farmers to access data about weather and soil conditions and predictions
+	\item
+	G5 : Allow farmers to discuss on forums
 	
 \end{itemize}
 
