@@ -76,13 +76,12 @@ The figure \ref{Fig:interface_forum} shows the view of the forum on a phone, thi
 
 \end{figure}
 
-\subsubsection{Hardware Interfaces}
-\subsubsection{Software Interfaces}
+
 \subsubsection{Communication Interfaces}
 The communication interfaces of the different sensors is external.
 \subsection{Functional requirements}
 % Definition  of  use  case  diagrams,  use  cases  and  associated sequence/activity diagrams, and mapping on requirements 
-\begin{table}[htbp]
+\begin{table}[H]
 	\centering
 	\begin{tabularx}{\linewidth}{|l|X|}
 		\hline
@@ -105,13 +104,13 @@ The communication interfaces of the different sensors is external.
 		
 		&-	The data provided by the farmer have an invalid type or the e-mail address is incorrect. The system displays a message prompting the farmer to modify the dedicated field(s) of the form. 
 		\tabularnewline
-		&-	There is no registered policy maker dedicated to the area. In that case, no acknowledgement e-mail is sent, but instead a warning message is sent to the developer to urge him/her to contact the adequate policy maker. 
+		&-	There is no registered policy maker dedicated to the area. In that case, no acknowledgement e-mail is sent, but instead a warning message is sent to the maintener to urge him/her to contact the adequate policy maker. 
 		\tabularnewline
 		\hline
 	\end{tabularx}   
 \end{table}
 
-\begin{table}[htbp]
+\begin{table}[H]
 	\centering
 	\begin{tabularx}{\linewidth}{|l|X|}
 		\hline
@@ -141,7 +140,7 @@ The communication interfaces of the different sensors is external.
 	\end{tabularx}   
 \end{table}
 
-\begin{table}[htbp]
+\begin{table}[H]
 	\centering
 	\begin{tabularx}{\linewidth}{|l|X|}
 		\hline
@@ -171,7 +170,7 @@ The communication interfaces of the different sensors is external.
 	\end{tabularx}   
 \end{table}
 
-\begin{table}[htbp]
+\begin{table}[H]
 	\centering
 	\begin{tabularx}{\linewidth}{|l|X|}
 		\hline
@@ -196,7 +195,7 @@ The communication interfaces of the different sensors is external.
 	\end{tabularx}   
 \end{table}
 
-\begin{table}[htbp]
+\begin{table}[H]
 	\centering
 	\begin{tabularx}{\linewidth}{|l|X|}
 		\hline
@@ -231,7 +230,7 @@ The communication interfaces of the different sensors is external.
 	\end{tabularx}   
 \end{table}
 
-\begin{table}[htbp]
+\begin{table}[H]
 	\centering
 	\begin{tabularx}{\linewidth}{|l|X|}
 		\hline
@@ -265,7 +264,7 @@ The communication interfaces of the different sensors is external.
 \end{table}
 
 
-\begin{table}[htbp]
+\begin{table}[H]
 	\centering
 	\begin{tabularx}{\linewidth}{|l|X|}
 		\hline
@@ -295,7 +294,7 @@ The communication interfaces of the different sensors is external.
 	\end{tabularx}   
 \end{table}
 
-\begin{table}[htbp]
+\begin{table}[H]
 	\centering
 	\begin{tabularx}{\linewidth}{|l|X|}
 		\hline
@@ -324,7 +323,7 @@ The communication interfaces of the different sensors is external.
 	\end{tabularx}   
 \end{table}
 
-\begin{table}[htbp]
+\begin{table}[H]
 	\centering
 	\begin{tabularx}{\linewidth}{|l|X|}          % _       ion_
 		\hline
@@ -356,19 +355,19 @@ The communication interfaces of the different sensors is external.
 	\end{tabularx}   
 \end{table}
 
-\begin{figure}
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{Images/use-case-farmer.png}
 	\caption{\label{fig:usecasefarmer}Use case diagram for logged in farmer}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{Images/use-case-policy.png}
 	\caption{\label{fig:usecasepolicymakers}Use case diagram for logged in policy makers}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 	
 	\centering
 	
@@ -380,7 +379,7 @@ The communication interfaces of the different sensors is external.
 
 
 
-\begin{figure}
+\begin{figure}[H]
 	
 	\centering
 	
@@ -392,7 +391,7 @@ The communication interfaces of the different sensors is external.
 
 
 
-\begin{figure}
+\begin{figure}[H]
 	
 	\centering
 	
@@ -403,13 +402,13 @@ The communication interfaces of the different sensors is external.
 \end{figure}
 
 
-\begin{figure}
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{Images/seq-create-forum.png}
 	\caption{\label{fig:seqcreationforum} Sequence diagram on the creation of a forum and the reply by another farmer}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{Images/seq-policy-farmers.png}
 	\caption{\label{fig:seqpolicymaker} Sequence diagram showing a policy marker reaching out best performing farmers for advises and send them to less productive farmer}
@@ -419,9 +418,9 @@ The communication interfaces of the different sensors is external.
 
 \subsection{Design Constraints}
 \subsubsection{Standards compliance}
+%PDP -> Baudouin
 \subsubsection{Hardware limitations}
-\subsubsection{Any other constraint ??}
-Do we keep it ?
+%Mobile app/Web app -> Glen
 \subsection{Software System Attributes}
 \subsubsection{Reliability}
 The system should be tolerant to missing data from the rainfall data conditions and previsions. Production releases should be redundant to prevent data losses and ensure the core function of the system, which can't be easily replaced by another service, as soil, weather data access or the discussion forums can be.
