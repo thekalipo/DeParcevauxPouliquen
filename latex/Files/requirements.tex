@@ -424,7 +424,19 @@ The communication interfaces of the different sensors is external.
 Do we keep it ?
 \subsection{Software System Attributes}
 \subsubsection{Reliability}
-The system should be reliable as it's goal is to be the main instrument for farmers. Policy maker will also rely on the system to provide true data on the farmers to improve the general performance in the state.
+The system should be tolerant to missing data from the rainfall data conditions and previsions. Production releases should be redundant to prevent data losses and ensure the core function of the system, which can't be easily replaced by another service, as soil, weather data access or the discussion forums can be.
+\subsubsection{Availability}
+Since a 2 minutes of downtime per day seems acceptable to the system, a 99,9\% availability is a good target.Furthermore, As this article \cite{downtime} explains, a third of downtime is planned one. Since there are important timelapses with little or no traffic on some parts of the platform (for example productivity comparison when farmers are still croping), it is possible to optimise the planned downtime schedule to reach the 3 9s target.
+\subsubsection{Security}
+The main security concern is about protecting the production data, which are sensitive ones as they concern the business of farmers. The data shouldthus be encrypted. In order to prevent SQL injections, the queries that farmers and policy makers can execute should be parametrized. Some basic rules shouldn't neither be forgotten. The system should ensure that farmers and policy makers choose strong passwords.  
+
+But the privacy is also sensitive, and especially since the personal data protection bill is still under discussion in Parliament House (see \cite{pdp}). To anticipate its ratification, the system should comply with its basic recommendations: identify sensitive data, control data movement and respect the least-privilege principle.
+
+\subsubsection{Maintainability}
+Since our platform is very likely to be subject to changes (we didn't integrate agronomists), different components should be implemented independently to facilitate their mutation and easily identify and correct their errors.
+\subsubsection{Portability}
+The software should be designed to be supported by both mobile and desktop devices. The mobile version should run similarly with different version.
+The system should be reliable as its goal is to be the main instrument for farmers. Policy maker will also rely on the system to provide true data on the farmers to improve the general performance in the state.
 \subsubsection{Availability}
 The system should be available all the time with a real necessity around the end and the beginning of a season. The end because the farmers will have to put their data, the policy makers will watch the results and questions may be ask at this moment to improve the next season.
 \subsubsection{Security}
