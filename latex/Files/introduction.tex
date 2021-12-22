@@ -1,36 +1,42 @@
 \subsection{Purpose}
 As reported by the Food and Agriculture Organization of the United Nations \cite{fao}, the Indian cultivated area went through a great expansion between 1970 and 2000, going from 140 million to 190 million hectares (ha). In the meantime, the number of farmholding skyrocketed, from 70.5 to 115.6 million. This is the reason why, the average size of farmholdings dropped from 2.30 to 1.41 ha. 
-
-Hence, the Indian government has to tackle many new farms with lower sizes, which may require some help or incentives.
-
-In this contect, the United Nations Development Programme (UNDP) partnered with the state of Telangana to enhance good deviances in the state's agriculture through a data-driven approach. 
+\\
+Hence, the Indian government has to tackle many new farms with lower sizes, which may require some helps or incentives.
+\\
+In this tense context, the United Nations Development Programme (UNDP) partnered with the state of Telangana to enhance good deviances in the state's agriculture through a data-driven approach. 
 
 \begin{itemize}
 	\item
-	G.1 : Allow farmers to get advices for optimizing their production
+	G1 : Allow farmers to get advices for optimizing their production
 	\subitem
-	G.1.1 : Allow farmers to retrieve personalized suggestions if they perform poorly
+	G1.1 : Allow farmers to retrieve personalized suggestions if they perform poorly
+	\subsubitem
+	G1.1.1: Provide farmers with a regular performance monitoring
+	\subsubitem
+	G1.1.1: Allow farmers to get a personal help when required
 	\subitem
 	G.1.2 : Allow farmers to discuss with other farmers about their issues
-	\subitem
+	\subsubitem
 	G1.2.1 : Allow farmers to create a discussion forum
-	\subitem
+	\subsubitem
 	G1.2.2 : Allow farmers to look for a specific topic among discussion forums
-	\subitem
+	\subsubitem
 	G1.2.3 : Allow farmers to send messages on a forum already created
-	\subitem
+	\subsubitem
 	G1.2.4 : Allow farmers to contact another farmer privately	
-	Allow farmers to send a specific help request
 	\item
-	G2 : Allow farmers to get data that impact their production. 
+	G2 : Allow farmers to get data about natural circumstances that impact their production. 
 	\subitem
 	G2.1 :Allow farmers to access data about weather conditions and predictions
 	\subitem
 	G2.2 :
 	Allow farmers to access data about soil moisture
 	\subitem
-	G2.3
+	G2.3 :
 	Allow farmers to access data about soil organic carbon
+	\subitem
+	G2.4 :
+	Allow farmers to access data about vegetation index
 	\item
 	G3 : Allow policy makers to globally enhance the productivity of the farmers of their area
 	\subitem
@@ -40,7 +46,7 @@ In this contect, the United Nations Development Programme (UNDP) partnered with 
 	\subitem
 	G3.3 : Allow policy makers to fetch best practices among farmers and provide them to others
 	\subitem
-	G3.4 : Allow policy makers to send personalized suggestions to poorly performing farmers
+	G3.4 : Allow policy makers to support poorly performing farmers with personalized suggestions
 
 	
 \end{itemize}
@@ -51,7 +57,7 @@ In this contect, the United Nations Development Programme (UNDP) partnered with 
 %what you write here is a comment that is not shown in the final text
 \begin{itemize}
 	\item
-	Farmers seed their crops
+	Farmers seed their crops with a given seed rate
 	\item
 	Farmers fertilize their crops
 	\item
@@ -153,13 +159,25 @@ In this contect, the United Nations Development Programme (UNDP) partnered with 
 \subsubsection{Machine Phenomena}
 \begin{itemize}
 	\item 
-	Identifies best performing farmers with regard to meteorological events
+	Identifies best performing farmers from a list with respect to a specific metric given their production releases
 	\item 
-	Identifies worst performing farmers with regard to meteorological events
+	Identifies worst performing farmers from a list with respect to a specific metric given their production releases
 	\item 
-	Compute personalized suggestions concerning crops and fertilizers
+	Transmit messages between users
+	\item
+	Fetchs farmers within a policy maker area
+	\item
+	Fetchs the policy maker responsible of a given farmer's area
 	\item 
-	Fetchs weather forecasts
+	Fetchs weather forecasts for a given time and a delimited zone
+	\item
+	Fetchs weather conditions for a given time and a delimited zone
+	\item
+	Fetchs organic carbon figures for a given time and a delimited zone
+	\item
+	Fetchs soil moisture figures for a given time and a delimited zone
+	\item
+	Fetchs vegetation index figures for a given time and a delimited zone
 	\item 
 	Fetchs data from water irrigation system
 	\item 
@@ -170,15 +188,17 @@ In this contect, the United Nations Development Programme (UNDP) partnered with 
 \subsection{Definitions, Acronyms, Abbreviations}
 \subsubsection{Definitions}
 \begin{itemize}
-	\item release
-	\item batch on a season, they are many release.
-	\item release period
-	\subitem Rabi season
-	\subitem Kharif season
-	\item analysis period
-	\item help request
-	\item incentive (~e-voucher for us)
-	\item vegetation index
+	\item User: is a person who received a registration link and successfully registered. It can be a farmer or a policy maker
+	\item Policy maker: is a user employed by the state of Telangana to (at least) supervise the agricultural activities in a given area
+	\item Farmer: is a user who holds an agricultural business and is recognized as such in the state of Telangana
+	\item Maintener: is the person in charge of the maintenance of DREAM
+	\item Release: is a set of information that relates what a farmer croped on a specific field during a season, how much water and fertilizer was necessary and what the farmer obtained from it. It has two statutes. Incomplete, when the bare minimum of information that is available at the beginning of the season is input. Complete when the release is completed by data that can't be known before the end of the season.
+	\item Batch: is a set of releases of a farmer which are on the same season. Releasing, analyzing a batch thus means releasing and analyzing the production of a farmer on a given season. A batch can be "confirmed" by the farmer, as to say that all the production data are there and are true.
+	\item Release and analysis periods: are the two months after the cropping season. The first month is dedicated to the completing of releases and confirming of batches. During the second month, policy makers are supposed to analyze the results, identify well and poorly performing farmers and ask them for best pratices or help them. The time allocated to these periods is based on a similar work, see \cite{seeds}.
+	\subitem Cropping season: is the timelapse during which seed are planted, cultivated and finally harvested. There are two major ones in India (officially recognized): Rabi for the spring season and Kharif for the autumnal one.
+	\item Help request: is a message from a farmer to his/her policy maker with a label that highlights its importance. The policy maker is supposed to reply with the best pratices or the expertise of agronomists (out of scope).
+	\item Incentive: is a financial support from policy maker to a well performing farmer. Assumed to be generated as an e-voucher to improve the working conditions.
+	\item Vegetation index: is a number that measures from distance the presence of green vegetation and by such the "health" of the vegetation on a given land. It characterizes the climate resilience (see \cite{vegetationindex})
 \end{itemize}
 
 \subsubsection{Acronyms}
@@ -194,6 +214,7 @@ Telengana
 	\item SQL: Simple Query Language
 	\item NICES: National Inforamtion System for Climate and Environment Studies
 	\item API: Application Programming Interface
+	\item ha: hectare
 \end{itemize}
 
 \subsubsection{Abbreviation}
