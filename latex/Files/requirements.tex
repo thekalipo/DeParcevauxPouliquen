@@ -430,7 +430,16 @@ The communication interfaces of the different sensors is external.
 
 \subsection{Design Constraints}
 \subsubsection{Standards compliance}
-%PDP -> Baudouin
+There is no data protection law yet. But the personal data protection bill is under discussion in Parliament House (see \cite{pdp}). To anticipate its ratification, the system should comply with its basic recommendations: 
+\begin{itemize}
+	\item identify sensitive data
+	\item control data movement
+	\item respect the least-privilege principle
+\end{itemize}
+Users should also be able to delete their personal data if they don't use DREAM anymore. In that case, their production data could be used anonymously for statistical purposes.
+
+To access to geo-tracking functionalities, the system should ask the user.
+
 \subsubsection{Hardware limitations}
 %Mobile app/Web app -> Glen
 \begin{itemize}
@@ -450,9 +459,8 @@ The system should be available all the time with a real necessity around the end
 
 Since a 2 minutes of downtime per day seems acceptable to the system, a 99,9\% availability is a good target.Furthermore, As this article \cite{downtime} explains, a third of downtime is planned one. Since there are important timelapses with little or no traffic on some parts of the platform, it is possible to optimise the planned downtime schedule to reach the 3 9s target.
 \subsubsection{Security}
-The main security concern is about protecting the production data, which are sensitive ones as they concern the business of farmers. The data shouldthus be encrypted. In order to prevent SQL injections, the queries that farmers and policy makers can execute should be parametrized. Some basic rules shouldn't neither be forgotten. The system should ensure that farmers and policy makers choose strong passwords.  
+The main security concern is about protecting the production data, which are sensitive ones as they concern the business of farmers. The data should thus be encrypted. In order to prevent SQL injections, the queries that farmers and policy makers can execute should be parametrized. Some basic rules shouldn't neither be forgotten. The system should ensure that farmers and policy makers choose strong passwords.  
 
-But the privacy is also sensitive, and especially since the personal data protection bill is still under discussion in Parliament House (see \cite{pdp}). To anticipate its ratification, the system should comply with its basic recommendations: identify sensitive data, control data movement and respect the least-privilege principle. Users will have the right to delete their data. 
 
 \subsubsection{Maintainability}
 Since our platform is very likely to be subject to changes (we didn't integrate agronomists), different components should be implemented independently to facilitate their mutation and easily identify and correct their errors.
