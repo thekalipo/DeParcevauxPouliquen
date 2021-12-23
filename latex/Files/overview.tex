@@ -52,40 +52,75 @@ Tamia requires the insight of some expert on crops for the coming seeding. She g
 
 \begin{itemize}
 	\item
-	R1: When a farmer asks for personalized suggestions, the system should retrieve the weather, soil and location data
+	R1: The system should integrate a calendar that rythms the alternance of cropping season/release period/analysis period. 
 	\item
-	R2: If a farmer performs well, policy makers will request his best practices
+	R2: Two weeks before the end of the release period, DREAM should recall the farmer to confirm the batch of production (if the farmer didn't confirm it yet).
 	\item
-	R3: At each end of cropping season, the system should request production data of farmers.
+	R3: Two weeks before the end of the analysis period, DREAM should recall the policy maker to identify well and poorly performing farmers (if not done).
 	\item
-	R4: The system fetches using external database the data about soil and irrigation
+	R4: Two weeks before the end of the analysis period, DREAM should recall the policy maker to send messages/incentives/help proposal to farmers, if some of the well or poorly performing ones weren't contacted yet.
 	\item
-	R5: The system should compute the performance indicators based on the data provided by farmers
+	R5: DREAM should enable messaging between farmers and a farmer and a policy maker from the same area.
 	\item
-	R6: When a policy maker asks for poor-performing farmers, the system should retrieve the associated farmers.
+	R6: When an area is given, DREAM should fetch the policy maker in charge of it.
 	\item
-	R7: When a policy maker asks for well-performing farmers, the system should retrieve the associated farmers.
+	R7: DREAM should enable any farmer to create a discussion forum, with a title, tags and filters.
 	\item
-	R8: The system should grant farmers access to their personal and production data
+	R8: When requested, DREAM should provide discussion forums ordered by semantic proximity of a given topic.
+	\item
+	R9: DREAM should enable unlimited answers in the thread of a forum.
+	\item
+	R10: When a location is asked and the user has agreed so, DREAM should fetch the position thanks to the GPS functionality of a device.
+	\item
+	R11: Given a date and a location, DREAM should fetch from the external databases the  closest and latest weather conditions.
+	\item
+	R12: Given a date, a location and a number of days, DREAM should fetch from the external databases the  closest and most adequate (with respect to the number of days of prediction) weather predictions.
+	\item
+	R13: Given a date and a location, DREAM should fetch from the external databases the  closest and latest soil moisture data (that is, figures and locations).
+	\item
+	R14: Given a date and a location, DREAM should fetch from the external databases the  closest and latest soil organic carbon data (that is, figures and locations).
+	\item
+	R15: Given a date and a location, DREAM should fetch from the external databases the  closest and latest vegetation index data (that is, figures and locations).
+	\item
+	R16: Given a list of figures and locations, DREAM should display them on an interactive map, with a nice legend.
+	\item
+	R17: On a move, the map displayed should be reactive. That is to say : it should query new values to fit in the new spatial frame.
+	\item
+	R18: DREAM should have a clock synchronous with the Indian time zone and Gregorian calendar.
+	\item
+	R19: Given a metric and a batch from a location, DREAM should fetch the required data at the date that correspond to the batch. The system should then correctly compute the performance.
+	\item
+	R20: The system should be able to rank a list of farmers during a given season with respect to a metric.
+	\item
+	R21: Given a two dates and a farmer identity, DREAM should fetch from the water irrigation system the total amount of water consumed during the time-lapse by the farmer.
+	\item
+	R22: If any necessary piece of information is missing at some point of a process, DREAMS should display an error message.
+	\item
+	R23: Given a user identity, DREAMS should be able to access all the personal data of this user.
+	\item
+	R24: When a policy maker decides to make an incentive, DREAMS should create via an external API an e-voucher of the amount wanted. 
+	\item
+	R25: Given a farmer identity, DREAM should be capable of fetching the corresponding batch.
+
 \end{itemize}
 
 \subsubsection{Assumptions, dependencies and constraints}
 %TODO
 \begin{itemize}
 	\item
-	Cropping seasons are the same on the whole Telengana State and follow the Kharif/Rabi calendar, see Figure \ref{fig:seasons} % (see Recommended System of Breeder Seed Indent and Supply)
+	A1: Cropping seasons are the same on the whole Telengana State and follow the Kharif/Rabi calendar, see Figure \ref{fig:seasons}, as related in \cite{seasons}.
 	\item
-	Farmers put rightful information on their location and data on their production. Fraud is possible but it is the responsibility of policy makers to prevent it, with the help of agronomists.
+	A2: Farmers put rightful information on their location and data on their production. Fraud is possible but it is the responsibility of policy makers to prevent it, with the help of agronomists.
 	\item
-	If a policy maker is missing at some farmer's registration, he/she will be found before the end of the cropping season.
+	A3: If a policy maker is missing at some farmer's registration, he/she will be found before the end of the cropping season.
 	\item
-	All farmers that register have access to internet in some way and have access to the application.
+	A4: All users that register have access to internet in some way and have access to the application.
 	\item
-	All humidity data are collected through the database of the NICES project. The system thus doesn't require its own sensors.
+	A5: All humidity data are collected through the database of the NICES project. The system thus doesn't require its own sensors.
 	\item
-	To avoid money transfers and check the use of the money, incentives are sent as e-vouchers.
+	A6: To avoid money transfers and check the use of the money, incentives are sent as e-vouchers. This decisions was supported by the stakeholder, see \cite{git}.
 	\item
-	The irrigation system is supposed to provide the water consumption data thanks to an external API.
+	A7: The irrigation system is supposed to provide the water consumption data thanks to an external API. 
 	
 \end{itemize}
 
@@ -100,5 +135,87 @@ Tamia requires the insight of some expert on crops for the coming seeding. She g
 	\label{fig:seasons}
 	
 \end{figure}
+
+
+\subsubsection{Mapping on goals}
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{\linewidth}{|l|X|X|}
+		\hline
+		\multicolumn{1}{c|}{\textit{\textbf{Goals}}} & \multicolumn{1}{c|}{\textit{\textbf{Assumptions}}} &
+		\multicolumn{1}{c|}{\textit{\textbf{Requirements}}}
+		                                                 \tabularnewline \hline
+		G1.1.1 &
+		A1,A3,A4&
+		R1,R2,R3,R4,R5,R6,R25
+		\tabularnewline
+		\hline
+		G1.1.2 & 
+		A3,A4&
+		R5, R23
+		\tabularnewline
+		\hline
+		G1.2.1 & 
+		A4&
+		R7
+		\tabularnewline
+		\hline
+		G1.2.2 & 
+		A4&
+		R8,R18
+		\tabularnewline
+		\hline
+		G1.2.3 & 
+		A4&
+		R9,R18
+		\tabularnewline
+		\hline
+		G1.2.4 & 
+		A4&
+		R5,R23
+		\tabularnewline
+		\hline
+		G2.1 & 
+		A4&
+		R9,R10,R11,R12,R16,R17,R18
+		\tabularnewline
+		\hline
+		G2.2 & 
+		A4,A5&
+		R9,R10,R11,R13,R16,R17,R18
+		\tabularnewline
+		\hline
+		G2.3 & 
+		A4&
+		R9,R10,R11,R14,R16,R17,R18
+		\tabularnewline
+		\hline
+		G2.4 & 
+		A4&
+		R9,R10,R11,R15,R16,R17,R18
+		\tabularnewline
+		\hline
+		G3.1 & 
+		A2,A4,A7&
+		R9,R10,R11,R12,R13,R14,R15,R16,R17,R18,R19,R20,R21
+		\tabularnewline
+		\hline
+		G3.2 & 
+		A4,A6&
+		R5,R24
+		\tabularnewline
+		\hline
+		G3.3 & 
+		A4&
+		R5
+		\tabularnewline
+		\hline
+		G3.4 & 
+		A4&
+		R5
+		\tabularnewline
+		\hline
+	\end{tabularx}   
+\end{table}
 
 
