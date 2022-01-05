@@ -62,26 +62,37 @@ sequenceDiagram
     DataBase-->>-ForumSystem: done
     ForumSystem-->>-Farmer1: forum created succesfully
 ```
-
+## send mail asking for prod data
+```mermaid
+sequenceDiagram
+    actor MailFarmers
+    ReleaseSystem ->> DataBase: getMailFarmers()
+    DataBase -->> ReleaseSystem: farmersmails
+    loop mail : farmersmails
+        ReleaseSystem -) MailSystem: sendMail(mail, message)
+        Note over ReleaseSystem, MailSystem: ask to release production data
+        MailSystem -) MailFarmers: mail release production data
+        Note over MailFarmers, MailSystem: one mail is sent to each farmer
+    end
+```
 ## Request for Production Data
+before that the system gets the mail of the farmers and does a loop
 ```mermaid
 sequenceDiagram
     actor Farmer
-    participant System
-    System -) Farmer: send Email
-    Note over System, Farmer: ask to release production data
-    Farmer ->>+System: production data
-    System ->>+DataBase: save production data
-    DataBase->>-System: saved
-    System-->>-Farmer: production data saved
-    Farmer->>+System: complete production data
-    System ->>+DataBase: save production data
-    DataBase->>-System: saved
-    System-->>-Farmer: complete effective
-    Farmer->>+System: confirm the data
-    System->>+DataBase: production data confirmed
-    DataBase-->>-System: done
-    System-->>-Farmer: data confirmed
+    participant ReleaseSystem
+    Farmer ->>+ReleaseSystem: production data
+    ReleaseSystem ->>+DataBase: save production data
+    DataBase->>-ReleaseSystem: saved
+    ReleaseSystem-->>-Farmer: production data saved
+    Farmer->>+ReleaseSystem: complete production data
+    ReleaseSystem ->>+DataBase: save production data
+    DataBase->>-ReleaseSystem: saved
+    ReleaseSystem-->>-Farmer: complete effective
+    Farmer->>+ReleaseSystem: confirm the data
+    ReleaseSystem->>+DataBase: production data confirmed
+    DataBase-->>-ReleaseSystem: done
+    ReleaseSystem-->>-Farmer: data confirmed
 ```
 
 ## Contact farmers
