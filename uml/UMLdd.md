@@ -5,21 +5,24 @@ sequenceDiagram
     actor Farmer
     participant AuthentificationSystem
     participant DataBase
-    participant Mail
+    participant MailSystem
+    participant GeolocalizationSystem
     actor PolicyMaker
     Farmer->>+AuthentificationSystem: registerAsFarmer(name, surname, password, email, location, geotracking)
     AuthentificationSystem->>+DataBase: exists(email)
     DataBase-->>-AuthentificationSystem: query response
     alt no email corresponding
-        AuthentificationSystem-)Mail: verificationEmail(email, randomIdentifier)
-        Mail-)Farmer: send email verification
+        AuthentificationSystem-)MailSystem: verificationEmail(email, randomIdentifier)
+        MailSystem-)Farmer: send email verification
         Farmer-)AuthentificationSystem: verification link
         AuthentificationSystem->>+DataBase: insertUser
         DataBase-->>-AuthentificationSystem: done
+        AuthentificationSystem->>+ GeolocalizationSystem: verify(location)
+        GeolocalizationSystem-->>-AuthentificationSystem: location
         AuthentificationSystem->>+DataBase: retrieveEmailPolicyMaker(location)
         DataBase-->>-AuthentificationSystem: emailPolicyMaker
-        AuthentificationSystem-)Mail: sendEmail(emailPolicyMaker)
-        Mail-)PolicyMaker: sendEmail(email)
+        AuthentificationSystem-)MailSystem: sendEmail(emailPolicyMaker)
+        MailSystem-)PolicyMaker: sendEmail(email)
         AuthentificationSystem-->>Farmer: done
     else
         AuthentificationSystem-->>-Farmer: email already in use
@@ -66,8 +69,9 @@ sequenceDiagram
 ```mermaid
 sequenceDiagram
     actor MailFarmers
-    ReleaseSystem ->> DataBase: getMailFarmers()
-    DataBase -->> ReleaseSystem: farmersmails
+    CalendarSystem -) ReleaseSystem: askRelease()
+    ReleaseSystem ->>+ DataBase: getMailFarmers()
+    DataBase -->>- ReleaseSystem: farmersmails
     loop mail : farmersmails
         ReleaseSystem -) MailSystem: sendMail(mail, message)
         Note over ReleaseSystem, MailSystem: ask to release production data
