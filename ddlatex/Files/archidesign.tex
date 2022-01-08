@@ -1,10 +1,5 @@
 \subsection{Overview: high-level components and their interaction}
 
-Since the application is distributed and explicitly designed to support interface between users and the system, the optimal architecture is a client/server one. 
-
-As the system integrates multiple data sources, a three-tier architecture is more adequate. The system is thus divided into a Client Layer, which is the entry point for users, the Business Layer which is embedded in servers, and the Data Layer. 
-
-For the sake of simplicity, praticality and security, the architecture is designed as a thin client one.
 
 \begin{figure} [!h]
 	\centering
@@ -52,3 +47,10 @@ The following sequence diagrams aims at presenting the links between the compone
 	\includegraphics[width=\textwidth]{Images/seq_request_prod_data.png}
 	\caption{\label{fig:seq_request_prod_data} Farmer putting their production data}
 \end{figure}
+
+\subsection{Selected architectural styles and patterns}
+Since the application is distributed and explicitly designed to support interface between users and the system, the optimal architecture is a client/server one. 
+
+As the system integrates multiple data sources, a three-tier architecture is more adequate. The system is thus divided into a Client Layer, which is the entry point for users, the Business Layer which is embedded in servers, and the Data Layer. 
+
+For the sake of simplicity, praticality and security, the architecture is designed as a thin client one.
