@@ -1,0 +1,86 @@
+The main goal of this document is to better explain what we have defined in the RASD document. In the following list we will explain how the requirements map to the design elements that are defined in this document.
+
+\begin{itemize}
+	\item
+	R1: The system should integrate a calendar that rythms the alternance of cropping season/release period/analysis period.
+	\subitem Components : Calendar 
+	\item
+	R2: Two weeks before the end of the release period, DREAM should recall the farmer to confirm the batch of production (if the farmer didn't confirm it yet).
+	\subitem Components : Calendar, Message, Mail and Release
+	\item
+	R3: Two weeks before the end of the analysis period, DREAM should recall the policy maker to identify well and poorly performing farmers (if not done).
+	\subitem Components : Calendar, Performance, Messaging and E-voucher
+	\item
+	R4: Two weeks before the end of the analysis period, DREAM should recall the policy maker to send messages/incentives/help proposal to farmers, if some of the well or poorly performing ones weren't contacted yet.
+	\subitem Components : Calendar, Performance, Messaging and E-voucher
+	\item
+	R5: DREAM should enable messaging between farmers and a farmer and a policy maker from the same area.
+	\subitem Components : Messaging, Mail and Geolocalization
+	\subitem Mockup : figure \ref{Fig:interface_messages_policy_maker}
+	\item
+	R6: When an area is given, DREAM should fetch the policy maker in charge of it.
+	\subitem Components : Geolocalization
+	\item
+	R7: DREAM should enable any farmer to create a discussion forum, with a title, tags and filters.
+	\subitem Component : Forum
+	\subitem Mockup : figure \ref{Fig:interface_forum}
+	\item
+	R8: When requested, DREAM should provide discussion forums ordered by semantic proximity of a given topic.
+	\subitem Components : Forum, Geolocalization 
+	\item
+	R9: DREAM should enable unlimited answers in the thread of a forum.
+	\subitem Component : Forum
+	\item
+	R10: When a location is asked and the user has agreed so, DREAM should fetch the position thanks to the GPS functionality of a device.
+	\subitem Component : Geolocalization
+	\item
+	R11: Given a date and a location, DREAM should fetch from the external databases the  closest and latest weather conditions.
+	\subitem Component : Visualization with the externals API (Wheather, Soil, VI)
+	\subitem Mockup : figure \ref{Fig:interface_meteo}
+	\item
+	R12: Given a date, a location and a number of days, DREAM should fetch from the external databases the  closest and most adequate (with respect to the number of days of prediction) weather predictions.
+	\subitem Components : Visualization with the external Wheather API and Geolocalization
+	\item
+	R13: Given a date and a location, DREAM should fetch from the external databases the  closest and latest soil moisture data (that is, figures and locations).
+	\subitem Components : Visualization with the external Soil API and Geolocalization
+	\item
+	R14: Given a date and a location, DREAM should fetch from the external databases the  closest and latest soil organic carbon data (that is, figures and locations).
+	\subitem Components : Visualization with the external Soil API and Geolocalization
+	\item
+	R15: Given a date and a location, DREAM should fetch from the external databases the  closest and latest vegetation index data (that is, figures and locations).
+	\subitem Components : Visualization with the external VI API and Geolocalization
+	\item
+	R16: Given a list of figures and locations, DREAM should display them on an interactive map, with a nice legend.
+	\subitem Component : Visualization
+	\subitem Mockup : figure \ref{Fig:interface_meteo}
+	\item
+	R17: On a move, the map displayed should be reactive. That is to say: it should query new values to fit in the new spatial frame.
+	\subitem Component : Visualization
+	\subitem Mockup : figure \ref{Fig:interface_meteo}
+	\item
+	R18: DREAM should have a clock synchronous with the Indian time zone and Gregorian calendar.
+	\subitem Component : Calendar
+	\item
+	R19: Given a metric and a batch from a location, DREAM should fetch the required data at the date that correspond to the batch. The system should then correctly compute the performance.
+	\subitem Component : Performance, Geolocalization, Production DB, Release, Calendar
+	\item
+	R20: The system should be able to rank a list of farmers during a given season with respect to a metric.
+	\subitem Component : Performance
+	\item
+	R21: Given a two dates and a farmer identity, DREAM should fetch from the water irrigation system the total amount of water consumed during the time-lapse by the farmer.
+	\subitem Component : Performance with the Irrigation API
+	\item
+	R22: If any necessary piece of information is missing at some point of a process, DREAMS should display an error message.
+	\subitem a check will be done by all the components and an error will be prompted in the front end.
+	\item
+	R23: Given a user identity, DREAMS should be able to access all the personal data of this user.
+	\subitem Component : Personal data DB, the application will only collect the necessary data
+	\item
+	R24: When a policy maker decides to make an incentive, DREAMS should create via an external API an e-voucher of the amount wanted. 
+	\subitem Components : Messaging with the E-voucher Generator
+	\subitem Mockup : figure \ref{Fig:interface_messages_policy_maker}
+	\item
+	R25: Given a farmer identity, DREAM should be capable of fetching the corresponding batch.
+	\subitem Component : Release and Production DB
+	
+\end{itemize}
