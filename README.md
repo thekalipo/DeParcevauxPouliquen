@@ -34,9 +34,3 @@ Seed recommendations: https://seednet.gov.in/Material/SeedDetails.aspx?type=eeNB
 
 ## Organization
 Reunion every week (Wednesday)
-
-#### split of work
-1. Introduction : together
-2. Thinking together, writing and elaboration : Parcevaux
-3. depends on the parts
-4. Parcevaux
